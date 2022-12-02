@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-AnalysysSwiftDemo/Pods-AnalysysSwiftDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AnalysysAgent/AnalysysAgent.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework

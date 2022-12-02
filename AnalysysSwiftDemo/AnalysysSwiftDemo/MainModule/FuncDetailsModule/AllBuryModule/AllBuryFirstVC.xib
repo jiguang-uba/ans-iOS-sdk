@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllBuryFirstVC" customModule="AnalysysSwiftDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="lab_gesture" destination="Xts-tt-UPP" id="wPl-Ho-HL0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvf-Cq-oVR">
+                    <rect key="frame" x="30" y="74" width="354" height="40"/>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bMU-fk-Ktp"/>
+                    </constraints>
+                    <state key="normal" title="To AllBurySecondVC">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="to_all_bury_second:" destination="-1" eventType="touchUpInside" id="GUJ-jW-6cx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="示例(AnalysysButton)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9d-Eb-c6K">
+                    <rect key="frame" x="30" y="144" width="165.5" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="zDP-gs-o89"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmo-sa-BIh" customClass="AnalysysButton">
+                    <rect key="frame" x="30" y="179" width="165.5" height="30"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8JY-M2-ACx"/>
+                    </constraints>
+                    <state key="normal" title="AnalysysButton">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="analysys_btn_action:" destination="-1" eventType="touchUpInside" id="Mlk-0M-WTH"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="示例(AnalysysSwitch)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFT-kz-lh1">
+                    <rect key="frame" x="30" y="239" width="166" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Wsq-GD-wZw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2N-rk-zVC" customClass="AnalysysSwitch">
+                    <rect key="frame" x="30" y="274" width="51" height="31"/>
+                    <connections>
+                        <action selector="analysys_switch_action:" destination="-1" eventType="valueChanged" id="Kc3-5b-DFC"/>
+                    </connections>
+                </switch>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="j9T-8i-dHF">
+                    <rect key="frame" x="30" y="335" width="131" height="32"/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                    <connections>
+                        <action selector="analysys_seg_action:" destination="-1" eventType="valueChanged" id="6gI-hG-Gek"/>
+                    </connections>
+                </segmentedControl>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bBk-Z1-22D">
+                    <rect key="frame" x="30" y="396" width="94" height="32"/>
+                    <connections>
+                        <action selector="anlysys_step_action:" destination="-1" eventType="valueChanged" id="4eT-uE-Qf5"/>
+                    </connections>
+                </stepper>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label-TapGesture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xts-tt-UPP">
+                    <rect key="frame" x="30" y="458" width="137" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="TQE-wc-Sr8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6E-DF-CR3">
+                    <rect key="frame" x="30" y="528" width="62" height="30"/>
+                    <state key="normal" title="系统相机"/>
+                    <connections>
+                        <action selector="analysys_photo_action:" destination="-1" eventType="touchUpInside" id="WUW-dA-9e6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Yvf-Cq-oVR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="3qj-Xy-5MT"/>
+                <constraint firstItem="Xts-tt-UPP" firstAttribute="top" secondItem="bBk-Z1-22D" secondAttribute="bottom" constant="30" id="8vB-zP-ufQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yvf-Cq-oVR" secondAttribute="trailing" constant="30" id="930-t8-pW8"/>
+                <constraint firstItem="m9d-Eb-c6K" firstAttribute="top" secondItem="Yvf-Cq-oVR" secondAttribute="bottom" constant="30" id="9Ur-Kx-Elm"/>
+                <constraint firstItem="h2N-rk-zVC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Dcx-bd-X3J"/>
+                <constraint firstItem="hmo-sa-BIh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="JHn-3M-qc1"/>
+                <constraint firstItem="Yvf-Cq-oVR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="JKg-G6-DW5"/>
+                <constraint firstItem="j9T-8i-dHF" firstAttribute="top" secondItem="h2N-rk-zVC" secondAttribute="bottom" constant="30" id="JbB-21-TEq"/>
+                <constraint firstItem="GFT-kz-lh1" firstAttribute="top" secondItem="hmo-sa-BIh" secondAttribute="bottom" constant="30" id="LJ1-uR-Hkl"/>
+                <constraint firstItem="u6E-DF-CR3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="NfY-bS-DZY"/>
+                <constraint firstItem="bBk-Z1-22D" firstAttribute="top" secondItem="j9T-8i-dHF" secondAttribute="bottom" constant="30" id="SmX-ov-19E"/>
+                <constraint firstItem="GFT-kz-lh1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="bTO-IT-6uB"/>
+                <constraint firstItem="Xts-tt-UPP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="cao-mk-8aL"/>
+                <constraint firstItem="j9T-8i-dHF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="fPq-8M-hqo"/>
+                <constraint firstItem="hmo-sa-BIh" firstAttribute="width" secondItem="m9d-Eb-c6K" secondAttribute="width" id="ieU-TC-e4Z"/>
+                <constraint firstItem="h2N-rk-zVC" firstAttribute="top" secondItem="GFT-kz-lh1" secondAttribute="bottom" constant="5" id="qnE-AZ-Iyw"/>
+                <constraint firstItem="u6E-DF-CR3" firstAttribute="top" secondItem="Xts-tt-UPP" secondAttribute="bottom" constant="30" id="rxz-BZ-ncU"/>
+                <constraint firstItem="bBk-Z1-22D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="sQx-bF-rIU"/>
+                <constraint firstItem="m9d-Eb-c6K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="tg2-Jt-FD8"/>
+                <constraint firstItem="hmo-sa-BIh" firstAttribute="top" secondItem="m9d-Eb-c6K" secondAttribute="bottom" constant="5" id="vjT-es-xzc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+</document>

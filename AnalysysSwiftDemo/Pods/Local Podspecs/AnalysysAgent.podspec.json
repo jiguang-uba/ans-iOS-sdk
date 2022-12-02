@@ -1,0 +1,67 @@
+{
+  "name": "AnalysysAgent",
+  "version": "4.5.17",
+  "summary": "This is the official iOS SDK for Analysys.",
+  "homepage": "https://github.com/analysys/ana-ios-sdk",
+  "authors": {
+    "analysys": "analysysSDK@analysys.com.cn"
+  },
+  "source": {
+    "git": "https://github.com/analysys/ana-ios-sdk.git",
+    "tag": "4.5.17"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "SystemConfiguration",
+    "CoreTelephony",
+    "AdSupport",
+    "WebKit"
+  ],
+  "libraries": [
+    "z",
+    "sqlite3",
+    "icucore"
+  ],
+  "subspecs": [
+    {
+      "name": "Agent",
+      "source_files": "AnalysysSDK_SourceCode/Classes/AnalysysAgent/**/*",
+      "resources": "AnalysysSDK_SourceCode/Assets/AnalysysAgent.bundle",
+      "public_header_files": "AnalysysSDK_SourceCode/Classes/AnalysysAgent/{AnalysysAgent.h,ANSConst.h,AnalysysAgentConfig.h,ANSSecurityPolicy.h}"
+    },
+    {
+      "name": "Encrypt",
+      "source_files": "AnalysysSDK_SourceCode/Classes/AnalysysEncrypt/**/*",
+      "public_header_files": "AnalysysSDK_SourceCode/Classes/AnalysysEncrypt/ANSDataEncrypt.h",
+      "dependencies": {
+        "AnalysysAgent/Agent": [
+
+        ]
+      }
+    },
+    {
+      "name": "Push",
+      "source_files": "AnalysysSDK_SourceCode/Classes/AnalysysPush/**/*",
+      "public_header_files": "AnalysysSDK_SourceCode/Classes/AnalysysPush/AnalysysPush.h",
+      "dependencies": {
+        "AnalysysAgent/Agent": [
+
+        ]
+      }
+    },
+    {
+      "name": "Visual",
+      "source_files": "AnalysysSDK_SourceCode/Classes/AnalysysVisual/**/*",
+      "public_header_files": "AnalysysSDK_SourceCode/Classes/AnalysysVisual/AnalysysVisual.h",
+      "dependencies": {
+        "AnalysysAgent/Agent": [
+
+        ]
+      }
+    }
+  ]
+}

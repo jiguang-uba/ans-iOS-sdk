@@ -1,0 +1,2024 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E8EAE87D22FA91EE00C29545 /* PackageAgent */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E8EAE87E22FA91EE00C29545 /* Build configuration list for PBXAggregateTarget "PackageAgent" */;
+			buildPhases = (
+				E8EAE88122FA91F500C29545 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PackageAgent;
+			productName = PackageAgent;
+		};
+		E8EAE88222FA920E00C29545 /* PackageVisual */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E8EAE88322FA920E00C29545 /* Build configuration list for PBXAggregateTarget "PackageVisual" */;
+			buildPhases = (
+				E8EAE88622FA921700C29545 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PackageVisual;
+			productName = PackageVisual;
+		};
+		E8EAE88722FA922800C29545 /* PackagePush */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E8EAE88822FA922800C29545 /* Build configuration list for PBXAggregateTarget "PackagePush" */;
+			buildPhases = (
+				E8EAE88B22FA923000C29545 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PackagePush;
+			productName = PackagePush;
+		};
+		E8EAE88C22FA924000C29545 /* PackageEncrypt */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E8EAE88D22FA924000C29545 /* Build configuration list for PBXAggregateTarget "PackageEncrypt" */;
+			buildPhases = (
+				E8EAE89022FA924A00C29545 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PackageEncrypt;
+			productName = PackageEncrypt;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		38B80F9825C7F85800E18FD8 /* ANSWKScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B80F9625C7F85800E18FD8 /* ANSWKScriptMessageHandler.m */; };
+		38B80F9925C7F85800E18FD8 /* ANSWKScriptMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B80F9725C7F85800E18FD8 /* ANSWKScriptMessageHandler.h */; };
+		382E68FA25E4B192008D319D /* PageViewDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 382E68F825E4B192008D319D /* PageViewDuration.m */; };
+		382E68FB25E4B192008D319D /* PageViewDuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 382E68F925E4B192008D319D /* PageViewDuration.h */; };
+		4808C713246A93E7001E2B1C /* ANSVisualHybrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 4808C711246A93E7001E2B1C /* ANSVisualHybrid.h */; };
+		4808C714246A93E7001E2B1C /* ANSVisualHybrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 4808C712246A93E7001E2B1C /* ANSVisualHybrid.m */; };
+		4810D88C23502629004A60A5 /* ANSQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4810D88A23502629004A60A5 /* ANSQueue.h */; };
+		4810D88D23502629004A60A5 /* ANSQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4810D88B23502629004A60A5 /* ANSQueue.m */; };
+		4810D89D2350590E004A60A5 /* ANSLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4810D89B2350590D004A60A5 /* ANSLock.m */; };
+		4810D89E2350590E004A60A5 /* ANSLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 4810D89C2350590E004A60A5 /* ANSLock.h */; };
+		482198FA2362CB1D00AA4380 /* ANSAutoTrackCellProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 482198F92362CB1D00AA4380 /* ANSAutoTrackCellProperty.h */; };
+		482937BA246E4B4F005C948F /* UIView+ViewNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 482937B8246E4B4F005C948F /* UIView+ViewNode.h */; };
+		482937BB246E4B4F005C948F /* UIView+ViewNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 482937B9246E4B4F005C948F /* UIView+ViewNode.m */; };
+		483AB6C923F4E8B100059D46 /* ANSVisualConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 483AB6C723F4E8B100059D46 /* ANSVisualConst.h */; };
+		483AB6CA23F4E8B100059D46 /* ANSVisualConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 483AB6C823F4E8B100059D46 /* ANSVisualConst.m */; };
+		483AB6CD23F4F9AE00059D46 /* ANSVisualSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 483AB6CB23F4F9AE00059D46 /* ANSVisualSwizzler.h */; };
+		483AB6CE23F4F9AE00059D46 /* ANSVisualSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 483AB6CC23F4F9AE00059D46 /* ANSVisualSwizzler.m */; };
+		485082AB23ED082D000CE9E8 /* ANSVisualSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 485082A923ED082D000CE9E8 /* ANSVisualSearch.h */; };
+		485082AC23ED082D000CE9E8 /* ANSVisualSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 485082AA23ED082D000CE9E8 /* ANSVisualSearch.m */; };
+		485082AF23ED09D8000CE9E8 /* ANSVisualData.m in Sources */ = {isa = PBXBuildFile; fileRef = 485082AD23ED09D8000CE9E8 /* ANSVisualData.m */; };
+		485082B023ED09D8000CE9E8 /* ANSVisualData.h in Headers */ = {isa = PBXBuildFile; fileRef = 485082AE23ED09D8000CE9E8 /* ANSVisualData.h */; };
+		485B0A112431CA9400E6427D /* ANSVisualRegular.h in Headers */ = {isa = PBXBuildFile; fileRef = 485B0A0F2431CA9400E6427D /* ANSVisualRegular.h */; };
+		485B0A122431CA9400E6427D /* ANSVisualRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 485B0A102431CA9400E6427D /* ANSVisualRegular.m */; };
+		486DA100253E96F400390997 /* ANSSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 486DA0FE253E96F400390997 /* ANSSessionManager.h */; };
+		486DA101253E96F400390997 /* ANSSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 486DA0FF253E96F400390997 /* ANSSessionManager.m */; };
+		4875727523E7F86F008F7910 /* UIView+ANSVisualIdentifer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4875727223E7F86F008F7910 /* UIView+ANSVisualIdentifer.m */; };
+		4875727623E7F86F008F7910 /* UIView+ANSVisualIdentifer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4875727323E7F86F008F7910 /* UIView+ANSVisualIdentifer.h */; };
+		4875727723E7F86F008F7910 /* ANSVisualIdentiferProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4875727423E7F86F008F7910 /* ANSVisualIdentiferProtocol.h */; };
+		487AAD35235DBCD500B444CC /* ANSUncaughtExceptionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 487AAD33235DBCD500B444CC /* ANSUncaughtExceptionHandler.h */; };
+		487AAD36235DBCD500B444CC /* ANSUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 487AAD34235DBCD500B444CC /* ANSUncaughtExceptionHandler.m */; };
+		487C00CD238E1652000745A7 /* ANSProtocolSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 487C00CB238E1652000745A7 /* ANSProtocolSwizzler.h */; };
+		487C00CE238E1652000745A7 /* ANSProtocolSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 487C00CC238E1652000745A7 /* ANSProtocolSwizzler.m */; };
+		489AE16A23617B3400880546 /* ANSAllBuryPointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 489AE16423617B3400880546 /* ANSAllBuryPointModel.m */; };
+		489AE16B23617B3400880546 /* ANSKeyNameConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 489AE16523617B3400880546 /* ANSKeyNameConst.h */; };
+		489AE16C23617B3400880546 /* ANSBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 489AE16623617B3400880546 /* ANSBaseModel.m */; };
+		489AE16D23617B3400880546 /* ANSAllBuryPointModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 489AE16723617B3400880546 /* ANSAllBuryPointModel.h */; };
+		489AE16E23617B3400880546 /* ANSBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 489AE16823617B3400880546 /* ANSBaseModel.h */; };
+		489AE16F23617B3400880546 /* ANSKeyNameConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 489AE16923617B3400880546 /* ANSKeyNameConst.m */; };
+		489AE17223617CA100880546 /* ANSLogParamsUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 489AE17023617CA100880546 /* ANSLogParamsUtil.h */; };
+		489AE17323617CA100880546 /* ANSLogParamsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 489AE17123617CA100880546 /* ANSLogParamsUtil.m */; };
+		48A73D02234F183200938D96 /* ANSKeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A73D00234F183200938D96 /* ANSKeychainItemWrapper.h */; };
+		48A73D03234F183200938D96 /* ANSKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A73D01234F183200938D96 /* ANSKeychainItemWrapper.m */; };
+		48F41AFB2372BCDA0069E96D /* ANSAllBuryPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F41AF92372BCDA0069E96D /* ANSAllBuryPoint.m */; };
+		48F41AFC2372BCDA0069E96D /* ANSAllBuryPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F41AFA2372BCDA0069E96D /* ANSAllBuryPoint.h */; };
+		48F41AFF2372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F41AFD2372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.h */; };
+		48F41B002372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F41AFE2372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.m */; };
+		48F41B022372BDE40069E96D /* ANSAllBuryIdentiferProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F41B012372BDE40069E96D /* ANSAllBuryIdentiferProtocol.h */; };
+		88D5F08023029A1800F2C501 /* ANSSwizzlerNoConflict.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D5F07F23029A1800F2C501 /* ANSSwizzlerNoConflict.m */; };
+		E80D4A912356F898001E329F /* ANSControllerUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E80D4A8F2356F898001E329F /* ANSControllerUtils.h */; };
+		E80D4A922356F898001E329F /* ANSControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E80D4A902356F898001E329F /* ANSControllerUtils.m */; };
+		E80D4A952356F8DB001E329F /* ANSEncryptUtis.h in Headers */ = {isa = PBXBuildFile; fileRef = E80D4A932356F8DB001E329F /* ANSEncryptUtis.h */; };
+		E80D4A962356F8DB001E329F /* ANSEncryptUtis.m in Sources */ = {isa = PBXBuildFile; fileRef = E80D4A942356F8DB001E329F /* ANSEncryptUtis.m */; };
+		E84CE3772303AA1A00F5A0B6 /* UIViewController+ANSSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3712303AA1900F5A0B6 /* UIViewController+ANSSwizzling.h */; };
+		E84CE3782303AA1A00F5A0B6 /* UIViewController+ANSSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3722303AA1A00F5A0B6 /* UIViewController+ANSSwizzling.m */; };
+		E84CE3812303AA3800F5A0B6 /* ANSClassDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3792303AA3800F5A0B6 /* ANSClassDescription.m */; };
+		E84CE3822303AA3800F5A0B6 /* ANSClassDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE37A2303AA3800F5A0B6 /* ANSClassDescription.h */; };
+		E84CE3832303AA3800F5A0B6 /* ANSTypeDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE37B2303AA3800F5A0B6 /* ANSTypeDescription.m */; };
+		E84CE3842303AA3800F5A0B6 /* ANSPropertyDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE37C2303AA3800F5A0B6 /* ANSPropertyDescription.m */; };
+		E84CE3852303AA3800F5A0B6 /* ANSEnumDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE37D2303AA3800F5A0B6 /* ANSEnumDescription.h */; };
+		E84CE3862303AA3800F5A0B6 /* ANSPropertyDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE37E2303AA3800F5A0B6 /* ANSPropertyDescription.h */; };
+		E84CE3872303AA3800F5A0B6 /* ANSTypeDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE37F2303AA3800F5A0B6 /* ANSTypeDescription.h */; };
+		E84CE3882303AA3800F5A0B6 /* ANSEnumDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3802303AA3800F5A0B6 /* ANSEnumDescription.m */; };
+		E84CE3972303AA4B00F5A0B6 /* ANSObjectIdentityProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3892303AA4B00F5A0B6 /* ANSObjectIdentityProvider.h */; };
+		E84CE3982303AA4B00F5A0B6 /* ANSApplicationStateSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE38A2303AA4B00F5A0B6 /* ANSApplicationStateSerializer.m */; };
+		E84CE3992303AA4B00F5A0B6 /* ANSObjectSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE38B2303AA4B00F5A0B6 /* ANSObjectSelector.h */; };
+		E84CE39A2303AA4B00F5A0B6 /* ANSSequenceGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE38C2303AA4B00F5A0B6 /* ANSSequenceGenerator.m */; };
+		E84CE39B2303AA4B00F5A0B6 /* ANSObjectSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE38D2303AA4B00F5A0B6 /* ANSObjectSerializer.m */; };
+		E84CE39C2303AA4B00F5A0B6 /* ANSObjectSerializerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE38E2303AA4B00F5A0B6 /* ANSObjectSerializerConfig.h */; };
+		E84CE39D2303AA4B00F5A0B6 /* ANSObjectIdentityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE38F2303AA4B00F5A0B6 /* ANSObjectIdentityProvider.m */; };
+		E84CE39E2303AA4B00F5A0B6 /* ANSObjectSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3902303AA4B00F5A0B6 /* ANSObjectSelector.m */; };
+		E84CE39F2303AA4B00F5A0B6 /* ANSSequenceGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3912303AA4B00F5A0B6 /* ANSSequenceGenerator.h */; };
+		E84CE3A02303AA4B00F5A0B6 /* ANSObjectSerializerContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3922303AA4B00F5A0B6 /* ANSObjectSerializerContext.h */; };
+		E84CE3A12303AA4B00F5A0B6 /* ANSObjectSerializerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3932303AA4B00F5A0B6 /* ANSObjectSerializerConfig.m */; };
+		E84CE3A22303AA4B00F5A0B6 /* ANSApplicationStateSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3942303AA4B00F5A0B6 /* ANSApplicationStateSerializer.h */; };
+		E84CE3A32303AA4B00F5A0B6 /* ANSObjectSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3952303AA4B00F5A0B6 /* ANSObjectSerializer.h */; };
+		E84CE3A42303AA4B00F5A0B6 /* ANSObjectSerializerContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3962303AA4B00F5A0B6 /* ANSObjectSerializerContext.m */; };
+		E84CE3AF2303AA5C00F5A0B6 /* ANSUITableViewBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3A52303AA5C00F5A0B6 /* ANSUITableViewBinding.m */; };
+		E84CE3B02303AA5C00F5A0B6 /* ANSUIControlBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3A62303AA5C00F5A0B6 /* ANSUIControlBinding.m */; };
+		E84CE3B12303AA5C00F5A0B6 /* ANSUIControlBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3A72303AA5C00F5A0B6 /* ANSUIControlBinding.h */; };
+		E84CE3B22303AA5C00F5A0B6 /* ANSEventBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3A82303AA5C00F5A0B6 /* ANSEventBinding.m */; };
+		E84CE3B32303AA5C00F5A0B6 /* ANSUITableViewBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3A92303AA5C00F5A0B6 /* ANSUITableViewBinding.h */; };
+		E84CE3B42303AA5C00F5A0B6 /* ANSDesignerEventBindingResponseMesssage.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3AA2303AA5C00F5A0B6 /* ANSDesignerEventBindingResponseMesssage.m */; };
+		E84CE3B52303AA5C00F5A0B6 /* ANSDesignerEventBindingMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3AB2303AA5C00F5A0B6 /* ANSDesignerEventBindingMessage.h */; };
+		E84CE3B62303AA5C00F5A0B6 /* ANSDesignerTrackMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3AC2303AA5C00F5A0B6 /* ANSDesignerTrackMessage.m */; };
+		E84CE3B72303AA5C00F5A0B6 /* ANSDesignerEventBindingRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3AD2303AA5C00F5A0B6 /* ANSDesignerEventBindingRequestMessage.m */; };
+		E84CE3B82303AA5C00F5A0B6 /* ANSEventBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3AE2303AA5C00F5A0B6 /* ANSEventBinding.h */; };
+		E84CE3C92303AA6A00F5A0B6 /* ANSDesignerSessionCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3B92303AA6900F5A0B6 /* ANSDesignerSessionCollection.h */; };
+		E84CE3CA2303AA6A00F5A0B6 /* ANSAbstractABTestDesignerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3BA2303AA6900F5A0B6 /* ANSAbstractABTestDesignerMessage.m */; };
+		E84CE3CB2303AA6A00F5A0B6 /* ANSABTestDesignerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3BB2303AA6900F5A0B6 /* ANSABTestDesignerConnection.h */; };
+		E84CE3CC2303AA6A00F5A0B6 /* ANSWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3BC2303AA6A00F5A0B6 /* ANSWebSocket.m */; };
+		E84CE3CD2303AA6A00F5A0B6 /* ANSAbstractABTestDesignerMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3BD2303AA6A00F5A0B6 /* ANSAbstractABTestDesignerMessage.h */; };
+		E84CE3CE2303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3BE2303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.h */; };
+		E84CE3CF2303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3BF2303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.h */; };
+		E84CE3D02303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3C02303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.h */; };
+		E84CE3D12303AA6A00F5A0B6 /* ANSWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3C12303AA6A00F5A0B6 /* ANSWebSocket.h */; };
+		E84CE3D22303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3C22303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.m */; };
+		E84CE3D32303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3C32303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.h */; };
+		E84CE3D42303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3C42303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.m */; };
+		E84CE3D52303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3C52303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.m */; };
+		E84CE3D62303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3C62303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.m */; };
+		E84CE3D72303AA6A00F5A0B6 /* ANSABTestDesignerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E84CE3C72303AA6A00F5A0B6 /* ANSABTestDesignerConnection.m */; };
+		E84CE3D82303AA6A00F5A0B6 /* ANSABTestDesignerMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E84CE3C82303AA6A00F5A0B6 /* ANSABTestDesignerMessage.h */; };
+		E85097C923682CE7003214A1 /* ANSDateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E85097C723682CE7003214A1 /* ANSDateUtil.h */; };
+		E85097CA23682CE7003214A1 /* ANSDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E85097C823682CE7003214A1 /* ANSDateUtil.m */; };
+		E88B79682361A94400F421BB /* NSString+ANSDBEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = E88B79662361A94400F421BB /* NSString+ANSDBEncrypt.h */; };
+		E88B79692361A94400F421BB /* NSString+ANSDBEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B79672361A94400F421BB /* NSString+ANSDBEncrypt.m */; };
+		E88B796D2362E76600F421BB /* ANSAppStartSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E88B796B2362E76600F421BB /* ANSAppStartSource.h */; };
+		E88B796E2362E76600F421BB /* ANSAppStartSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B796C2362E76600F421BB /* ANSAppStartSource.m */; };
+		E8A5013A236AB75C00D41876 /* ANSTimeCheckManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A50138236AB75C00D41876 /* ANSTimeCheckManager.h */; };
+		E8A5013B236AB75C00D41876 /* ANSTimeCheckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A50139236AB75C00D41876 /* ANSTimeCheckManager.m */; };
+		E8BE443B234085E400C3FE74 /* ANSAutoTrackProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BE4438234085E400C3FE74 /* ANSAutoTrackProperty.h */; };
+		E8BE443C234085E400C3FE74 /* UIView+ANSAutoTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BE4439234085E400C3FE74 /* UIView+ANSAutoTrack.h */; };
+		E8BE443D234085E400C3FE74 /* UIView+ANSAutoTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BE443A234085E400C3FE74 /* UIView+ANSAutoTrack.m */; };
+		E8BFFEFA2383BCEF00D3DE8B /* UIView+ANSPathUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BFFEF82383BCEF00D3DE8B /* UIView+ANSPathUtils.h */; };
+		E8BFFEFB2383BCEF00D3DE8B /* UIView+ANSPathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BFFEF92383BCEF00D3DE8B /* UIView+ANSPathUtils.m */; };
+		E8C67D5F23545A9900EC75B8 /* AnalysysLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C67D5D23545A9900EC75B8 /* AnalysysLogger.h */; };
+		E8C67D6023545A9900EC75B8 /* AnalysysLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C67D5E23545A9900EC75B8 /* AnalysysLogger.m */; };
+		E8CD64C824D149F4002FAB55 /* UIView+ANSScreenDisplaying.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CD64C624D149F4002FAB55 /* UIView+ANSScreenDisplaying.h */; };
+		E8CD64C924D149F4002FAB55 /* UIView+ANSScreenDisplaying.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CD64C724D149F4002FAB55 /* UIView+ANSScreenDisplaying.m */; };
+		E8DA6A7E2333663100B56AB0 /* ANSConst.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DA6A7B2333662A00B56AB0 /* ANSConst.m */; };
+		E8DA6A7F2333663100B56AB0 /* ANSConst+private.h in Headers */ = {isa = PBXBuildFile; fileRef = E8DA6A7C2333663100B56AB0 /* ANSConst+private.h */; };
+		E8DA6A802333663100B56AB0 /* ANSConst.h in Headers */ = {isa = PBXBuildFile; fileRef = E8DA6A7D2333663100B56AB0 /* ANSConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8E396F824DBD9720019C4C7 /* ANSSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E396F624DBD9720019C4C7 /* ANSSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8E396F924DBD9720019C4C7 /* ANSSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E396F724DBD9720019C4C7 /* ANSSecurityPolicy.m */; };
+		E8E396FD24DBF0B30019C4C7 /* ANSNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E396FC24DBF0B30019C4C7 /* ANSNetworking.h */; };
+		E8EAE6FD22FA83BA00C29545 /* AnalysysVisual.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE6FB22FA83BA00C29545 /* AnalysysVisual.h */; };
+		E8EAE70A22FA83CC00C29545 /* AnalysysPush.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE70822FA83CC00C29545 /* AnalysysPush.h */; };
+		E8EAE78422FA917900C29545 /* ANSDataConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE72522FA917700C29545 /* ANSDataConfig.h */; };
+		E8EAE78522FA917900C29545 /* ANSHeatMapFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE72622FA917700C29545 /* ANSHeatMapFunc.m */; };
+		E8EAE78622FA917900C29545 /* ANSDataCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE72722FA917700C29545 /* ANSDataCheck.h */; };
+		E8EAE78722FA917900C29545 /* ANSDataProcessing.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE72822FA917700C29545 /* ANSDataProcessing.h */; };
+		E8EAE78822FA917900C29545 /* ANSDataCheckLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE72922FA917700C29545 /* ANSDataCheckLog.m */; };
+		E8EAE78922FA917900C29545 /* ANSDataCheckRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE72A22FA917700C29545 /* ANSDataCheckRouter.h */; };
+		E8EAE78A22FA917900C29545 /* ANSDataFunc.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE72B22FA917700C29545 /* ANSDataFunc.h */; };
+		E8EAE78B22FA917900C29545 /* ANSHeatMapFunc.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE72C22FA917700C29545 /* ANSHeatMapFunc.h */; };
+		E8EAE78C22FA917900C29545 /* ANSDataConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE72D22FA917700C29545 /* ANSDataConfig.m */; };
+		E8EAE78D22FA917900C29545 /* ANSDataCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE72E22FA917700C29545 /* ANSDataCheck.m */; };
+		E8EAE78E22FA917900C29545 /* ANSDataProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE72F22FA917700C29545 /* ANSDataProcessing.m */; };
+		E8EAE78F22FA917900C29545 /* ANSDataFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE73022FA917700C29545 /* ANSDataFunc.m */; };
+		E8EAE79022FA917900C29545 /* ANSDataCheckRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE73122FA917700C29545 /* ANSDataCheckRouter.m */; };
+		E8EAE79122FA917900C29545 /* ANSDataCheckLog.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE73222FA917700C29545 /* ANSDataCheckLog.h */; };
+		E8EAE79222FA917900C29545 /* NSObject+ANSSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE73422FA917700C29545 /* NSObject+ANSSwizzling.h */; };
+		E8EAE79422FA917900C29545 /* NSString+ANSMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE73622FA917700C29545 /* NSString+ANSMD5.m */; };
+		E8EAE79522FA917900C29545 /* NSInvocation+ANSHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE73722FA917700C29545 /* NSInvocation+ANSHelper.h */; };
+		E8EAE79622FA917900C29545 /* UIView+ANSHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE73822FA917700C29545 /* UIView+ANSHelper.h */; };
+		E8EAE79722FA917900C29545 /* NSThread+ANSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE73922FA917700C29545 /* NSThread+ANSHelper.m */; };
+		E8EAE79822FA917900C29545 /* NSString+ANSMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE73A22FA917700C29545 /* NSString+ANSMD5.h */; };
+		E8EAE79A22FA917900C29545 /* NSObject+ANSSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE73C22FA917700C29545 /* NSObject+ANSSwizzling.m */; };
+		E8EAE79B22FA917900C29545 /* NSThread+ANSHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE73D22FA917700C29545 /* NSThread+ANSHelper.h */; };
+		E8EAE79C22FA917900C29545 /* UIView+ANSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE73E22FA917700C29545 /* UIView+ANSHelper.m */; };
+		E8EAE79D22FA917900C29545 /* NSInvocation+ANSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE73F22FA917700C29545 /* NSInvocation+ANSHelper.m */; };
+		E8EAE79E22FA917900C29545 /* AnalysysSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE74022FA917700C29545 /* AnalysysSDK.m */; };
+		E8EAE79F22FA917900C29545 /* AnalysysAgentConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE74122FA917700C29545 /* AnalysysAgentConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8EAE7A122FA917900C29545 /* ANSPageAutoTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE74422FA917800C29545 /* ANSPageAutoTrack.m */; };
+		E8EAE7A222FA917900C29545 /* ANSOpenURLAutoTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE74522FA917800C29545 /* ANSOpenURLAutoTrack.m */; };
+		E8EAE7A322FA917900C29545 /* ANSDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE74622FA917800C29545 /* ANSDeviceInfo.m */; };
+		E8EAE7A422FA917900C29545 /* ANSHybrid.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE74722FA917800C29545 /* ANSHybrid.m */; };
+		E8EAE7A722FA917900C29545 /* ANSHeatMapAutoTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE74A22FA917800C29545 /* ANSHeatMapAutoTrack.m */; };
+		E8EAE7A922FA917900C29545 /* ANSDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE74C22FA917800C29545 /* ANSDeviceInfo.h */; };
+		E8EAE7AA22FA917900C29545 /* ANSOpenURLAutoTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE74D22FA917800C29545 /* ANSOpenURLAutoTrack.h */; };
+		E8EAE7AB22FA917900C29545 /* ANSPageAutoTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE74E22FA917800C29545 /* ANSPageAutoTrack.h */; };
+		E8EAE7AC22FA917900C29545 /* ANSHybrid.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE74F22FA917800C29545 /* ANSHybrid.h */; };
+		E8EAE7AE22FA917900C29545 /* ANSHeatMapAutoTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE75122FA917800C29545 /* ANSHeatMapAutoTrack.h */; };
+		E8EAE7AF22FA917900C29545 /* ANSNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE75222FA917800C29545 /* ANSNetworking.m */; };
+		E8EAE7B022FA917900C29545 /* ANSModuleProcessing.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE75422FA917800C29545 /* ANSModuleProcessing.h */; };
+		E8EAE7B122FA917900C29545 /* ANSModuleConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE75522FA917800C29545 /* ANSModuleConfig.h */; };
+		E8EAE7B222FA917900C29545 /* ANSModuleProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE75622FA917800C29545 /* ANSModuleProcessing.m */; };
+		E8EAE7B322FA917900C29545 /* ANSModuleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE75722FA917800C29545 /* ANSModuleConfig.m */; };
+		E8EAE7B422FA917900C29545 /* AnalysysAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE75822FA917800C29545 /* AnalysysAgent.m */; };
+		E8EAE7B522FA917900C29545 /* AnalysysSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE75922FA917800C29545 /* AnalysysSDK.h */; };
+		E8EAE7B622FA917900C29545 /* AnalysysAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE75A22FA917800C29545 /* AnalysysAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8EAE7B722FA917900C29545 /* AnalysysAgentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE75B22FA917800C29545 /* AnalysysAgentConfig.m */; };
+		E8EAE7B822FA917900C29545 /* ANSSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE75D22FA917800C29545 /* ANSSwizzler.h */; };
+		E8EAE7B922FA917900C29545 /* ANSFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE75E22FA917800C29545 /* ANSFileManager.h */; };
+		E8EAE7BA22FA917900C29545 /* ANSMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE75F22FA917800C29545 /* ANSMediator.m */; };
+		E8EAE7BB22FA917900C29545 /* ANSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE76022FA917800C29545 /* ANSUtil.h */; };
+		E8EAE7BE22FA917900C29545 /* ANSGzip.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE76322FA917800C29545 /* ANSGzip.m */; };
+		E8EAE7BF22FA917900C29545 /* ANSJsonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE76422FA917800C29545 /* ANSJsonUtil.h */; };
+		E8EAE7C022FA917900C29545 /* ANSBundleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE76522FA917800C29545 /* ANSBundleUtil.m */; };
+		E8EAE7C122FA917900C29545 /* ANSMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE76622FA917800C29545 /* ANSMediator.h */; };
+		E8EAE7C222FA917900C29545 /* ANSUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE76722FA917800C29545 /* ANSUtil.m */; };
+		E8EAE7C322FA917900C29545 /* ANSSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE76822FA917800C29545 /* ANSSwizzler.m */; };
+		E8EAE7C422FA917900C29545 /* ANSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE76922FA917800C29545 /* ANSFileManager.m */; };
+		E8EAE7C522FA917900C29545 /* ANSGzip.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE76A22FA917800C29545 /* ANSGzip.h */; };
+		E8EAE7C722FA917900C29545 /* ANSBundleUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE76C22FA917800C29545 /* ANSBundleUtil.h */; };
+		E8EAE7C822FA917900C29545 /* ANSJsonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE76D22FA917800C29545 /* ANSJsonUtil.m */; };
+		E8EAE7C922FA917900C29545 /* ANSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE76F22FA917800C29545 /* ANSReachability.m */; };
+		E8EAE7CA22FA917900C29545 /* ANSTelephonyNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE77022FA917800C29545 /* ANSTelephonyNetwork.m */; };
+		E8EAE7CB22FA917900C29545 /* ANSReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE77122FA917800C29545 /* ANSReachability.h */; };
+		E8EAE7CC22FA917900C29545 /* ANSTelephonyNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE77222FA917800C29545 /* ANSTelephonyNetwork.h */; };
+		E8EAE7CD22FA917900C29545 /* ANSDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE77422FA917800C29545 /* ANSDatabase.h */; };
+		E8EAE7CF22FA917900C29545 /* ANSDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE77622FA917800C29545 /* ANSDatabase.m */; };
+		E8EAE7D122FA917900C29545 /* ANSStrategyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE77922FA917800C29545 /* ANSStrategyManager.h */; };
+		E8EAE7D222FA917900C29545 /* ANSDefaultStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE77A22FA917800C29545 /* ANSDefaultStrategy.h */; };
+		E8EAE7D322FA917900C29545 /* ANSDelayStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE77B22FA917800C29545 /* ANSDelayStrategy.m */; };
+		E8EAE7D422FA917900C29545 /* ANSUserStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE77C22FA917800C29545 /* ANSUserStrategy.h */; };
+		E8EAE7D522FA917900C29545 /* ANSServerStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE77D22FA917800C29545 /* ANSServerStrategy.m */; };
+		E8EAE7D622FA917900C29545 /* ANSStrategyProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE77E22FA917800C29545 /* ANSStrategyProtocol.h */; };
+		E8EAE7D722FA917900C29545 /* ANSStrategyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE77F22FA917800C29545 /* ANSStrategyManager.m */; };
+		E8EAE7D822FA917900C29545 /* ANSServerStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE78022FA917800C29545 /* ANSServerStrategy.h */; };
+		E8EAE7D922FA917900C29545 /* ANSUserStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE78122FA917800C29545 /* ANSUserStrategy.m */; };
+		E8EAE7DA22FA917900C29545 /* ANSDelayStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE78222FA917800C29545 /* ANSDelayStrategy.h */; };
+		E8EAE7DB22FA917900C29545 /* ANSDefaultStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE78322FA917800C29545 /* ANSDefaultStrategy.m */; };
+		E8EAE7E022FA918A00C29545 /* ANSAESAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE7DC22FA918A00C29545 /* ANSAESAlgorithm.h */; };
+		E8EAE7E122FA918A00C29545 /* ANSAESAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7DD22FA918A00C29545 /* ANSAESAlgorithm.m */; };
+		E8EAE7E222FA918A00C29545 /* ANSDataEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE7DE22FA918A00C29545 /* ANSDataEncrypt.h */; };
+		E8EAE7E322FA918A00C29545 /* ANSDataEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7DF22FA918A00C29545 /* ANSDataEncrypt.m */; };
+		E8EAE83322FA919A00C29545 /* AnalysysVisual.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7E422FA919900C29545 /* AnalysysVisual.m */; };
+		E8EAE83422FA919A00C29545 /* ANSVisualSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7E522FA919A00C29545 /* ANSVisualSDK.m */; };
+		E8EAE83522FA919A00C29545 /* ANSVisualSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE7E622FA919A00C29545 /* ANSVisualSDK.h */; };
+		E8EAE83C22FA919A00C29545 /* ANSNSAttributedStringToNSDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F022FA919A00C29545 /* ANSNSAttributedStringToNSDictionaryValueTransformer.m */; };
+		E8EAE83D22FA919A00C29545 /* ANSUIColorToNSStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F122FA919A00C29545 /* ANSUIColorToNSStringValueTransformer.m */; };
+		E8EAE83E22FA919A00C29545 /* ANSCGSizeToNSDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F222FA919A00C29545 /* ANSCGSizeToNSDictionaryValueTransformer.m */; };
+		E8EAE83F22FA919A00C29545 /* ANSPassThroughValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F322FA919A00C29545 /* ANSPassThroughValueTransformer.m */; };
+		E8EAE84022FA919A00C29545 /* ANSCGRectToNSDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F422FA919A00C29545 /* ANSCGRectToNSDictionaryValueTransformer.m */; };
+		E8EAE84122FA919A00C29545 /* ANSCGPointToNSDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F522FA919A00C29545 /* ANSCGPointToNSDictionaryValueTransformer.m */; };
+		E8EAE84222FA919A00C29545 /* ANSUIEdgeInsetsToNSDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F622FA919A00C29545 /* ANSUIEdgeInsetsToNSDictionaryValueTransformer.m */; };
+		E8EAE84322FA919A00C29545 /* ANSUIFontToNSDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F722FA919A00C29545 /* ANSUIFontToNSDictionaryValueTransformer.m */; };
+		E8EAE84422FA919A00C29545 /* ANSUIImageToNSDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F822FA919A00C29545 /* ANSUIImageToNSDictionaryValueTransformer.m */; };
+		E8EAE84522FA919A00C29545 /* ANSCGColorRefToNSStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7F922FA919A00C29545 /* ANSCGColorRefToNSStringValueTransformer.m */; };
+		E8EAE84622FA919A00C29545 /* ANSNSNumberToCGFloatValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7FA22FA919A00C29545 /* ANSNSNumberToCGFloatValueTransformer.m */; };
+		E8EAE84722FA919A00C29545 /* ANSCGAffineTransformToNSDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7FB22FA919A00C29545 /* ANSCGAffineTransformToNSDictionaryValueTransformer.m */; };
+		E8EAE84822FA919A00C29545 /* ANSCATransform3DToNSDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7FC22FA919A00C29545 /* ANSCATransform3DToNSDictionaryValueTransformer.m */; };
+		E8EAE84922FA919A00C29545 /* ANSBOOLToNSNumberValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE7FD22FA919A00C29545 /* ANSBOOLToNSNumberValueTransformer.m */; };
+		E8EAE84A22FA919A00C29545 /* ANSValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EAE7FE22FA919A00C29545 /* ANSValueTransformers.h */; };
+		E8EAE87C22FA91A500C29545 /* AnalysysPush.m in Sources */ = {isa = PBXBuildFile; fileRef = E8EAE87B22FA91A500C29545 /* AnalysysPush.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38B80F9625C7F85800E18FD8 /* ANSWKScriptMessageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ANSWKScriptMessageHandler.m; path = Module/ANSWKScriptMessageHandler.m; sourceTree = "<group>"; };
+		38B80F9725C7F85800E18FD8 /* ANSWKScriptMessageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANSWKScriptMessageHandler.h; path = Module/ANSWKScriptMessageHandler.h; sourceTree = "<group>"; };
+		382E68F825E4B192008D319D /* PageViewDuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewDuration.m; sourceTree = "<group>"; };
+		382E68F925E4B192008D319D /* PageViewDuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewDuration.h; sourceTree = "<group>"; };
+		4808C711246A93E7001E2B1C /* ANSVisualHybrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSVisualHybrid.h; sourceTree = "<group>"; };
+		4808C712246A93E7001E2B1C /* ANSVisualHybrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSVisualHybrid.m; sourceTree = "<group>"; };
+		4810D88A23502629004A60A5 /* ANSQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSQueue.h; sourceTree = "<group>"; };
+		4810D88B23502629004A60A5 /* ANSQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSQueue.m; sourceTree = "<group>"; };
+		4810D89B2350590D004A60A5 /* ANSLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSLock.m; sourceTree = "<group>"; };
+		4810D89C2350590E004A60A5 /* ANSLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSLock.h; sourceTree = "<group>"; };
+		482198F92362CB1D00AA4380 /* ANSAutoTrackCellProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSAutoTrackCellProperty.h; sourceTree = "<group>"; };
+		482937B8246E4B4F005C948F /* UIView+ViewNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewNode.h"; sourceTree = "<group>"; };
+		482937B9246E4B4F005C948F /* UIView+ViewNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewNode.m"; sourceTree = "<group>"; };
+		483AB6C723F4E8B100059D46 /* ANSVisualConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSVisualConst.h; sourceTree = "<group>"; };
+		483AB6C823F4E8B100059D46 /* ANSVisualConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSVisualConst.m; sourceTree = "<group>"; };
+		483AB6CB23F4F9AE00059D46 /* ANSVisualSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSVisualSwizzler.h; sourceTree = "<group>"; };
+		483AB6CC23F4F9AE00059D46 /* ANSVisualSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSVisualSwizzler.m; sourceTree = "<group>"; };
+		485082A923ED082D000CE9E8 /* ANSVisualSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSVisualSearch.h; sourceTree = "<group>"; };
+		485082AA23ED082D000CE9E8 /* ANSVisualSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSVisualSearch.m; sourceTree = "<group>"; };
+		485082AD23ED09D8000CE9E8 /* ANSVisualData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSVisualData.m; sourceTree = "<group>"; };
+		485082AE23ED09D8000CE9E8 /* ANSVisualData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSVisualData.h; sourceTree = "<group>"; };
+		485B0A0F2431CA9400E6427D /* ANSVisualRegular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSVisualRegular.h; sourceTree = "<group>"; };
+		485B0A102431CA9400E6427D /* ANSVisualRegular.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSVisualRegular.m; sourceTree = "<group>"; };
+		486DA0FE253E96F400390997 /* ANSSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSSessionManager.h; sourceTree = "<group>"; };
+		486DA0FF253E96F400390997 /* ANSSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSSessionManager.m; sourceTree = "<group>"; };
+		4875727223E7F86F008F7910 /* UIView+ANSVisualIdentifer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ANSVisualIdentifer.m"; sourceTree = "<group>"; };
+		4875727323E7F86F008F7910 /* UIView+ANSVisualIdentifer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ANSVisualIdentifer.h"; sourceTree = "<group>"; };
+		4875727423E7F86F008F7910 /* ANSVisualIdentiferProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSVisualIdentiferProtocol.h; sourceTree = "<group>"; };
+		487AAD33235DBCD500B444CC /* ANSUncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSUncaughtExceptionHandler.h; sourceTree = "<group>"; };
+		487AAD34235DBCD500B444CC /* ANSUncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		487C00CB238E1652000745A7 /* ANSProtocolSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSProtocolSwizzler.h; sourceTree = "<group>"; };
+		487C00CC238E1652000745A7 /* ANSProtocolSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSProtocolSwizzler.m; sourceTree = "<group>"; };
+		489AE16423617B3400880546 /* ANSAllBuryPointModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSAllBuryPointModel.m; sourceTree = "<group>"; };
+		489AE16523617B3400880546 /* ANSKeyNameConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSKeyNameConst.h; sourceTree = "<group>"; };
+		489AE16623617B3400880546 /* ANSBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSBaseModel.m; sourceTree = "<group>"; };
+		489AE16723617B3400880546 /* ANSAllBuryPointModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSAllBuryPointModel.h; sourceTree = "<group>"; };
+		489AE16823617B3400880546 /* ANSBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSBaseModel.h; sourceTree = "<group>"; };
+		489AE16923617B3400880546 /* ANSKeyNameConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSKeyNameConst.m; sourceTree = "<group>"; };
+		489AE17023617CA100880546 /* ANSLogParamsUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSLogParamsUtil.h; sourceTree = "<group>"; };
+		489AE17123617CA100880546 /* ANSLogParamsUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSLogParamsUtil.m; sourceTree = "<group>"; };
+		48A73D00234F183200938D96 /* ANSKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSKeychainItemWrapper.h; sourceTree = "<group>"; };
+		48A73D01234F183200938D96 /* ANSKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSKeychainItemWrapper.m; sourceTree = "<group>"; };
+		48F41AF92372BCDA0069E96D /* ANSAllBuryPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSAllBuryPoint.m; sourceTree = "<group>"; };
+		48F41AFA2372BCDA0069E96D /* ANSAllBuryPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSAllBuryPoint.h; sourceTree = "<group>"; };
+		48F41AFD2372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ANSAllBuryIdentifer.h"; sourceTree = "<group>"; };
+		48F41AFE2372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ANSAllBuryIdentifer.m"; sourceTree = "<group>"; };
+		48F41B012372BDE40069E96D /* ANSAllBuryIdentiferProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSAllBuryIdentiferProtocol.h; sourceTree = "<group>"; };
+		88D5F07F23029A1800F2C501 /* ANSSwizzlerNoConflict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSSwizzlerNoConflict.m; sourceTree = "<group>"; };
+		E80D4A8F2356F898001E329F /* ANSControllerUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSControllerUtils.h; sourceTree = "<group>"; };
+		E80D4A902356F898001E329F /* ANSControllerUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSControllerUtils.m; sourceTree = "<group>"; };
+		E80D4A932356F8DB001E329F /* ANSEncryptUtis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSEncryptUtis.h; sourceTree = "<group>"; };
+		E80D4A942356F8DB001E329F /* ANSEncryptUtis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSEncryptUtis.m; sourceTree = "<group>"; };
+		E84CE3712303AA1900F5A0B6 /* UIViewController+ANSSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ANSSwizzling.h"; sourceTree = "<group>"; };
+		E84CE3722303AA1A00F5A0B6 /* UIViewController+ANSSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ANSSwizzling.m"; sourceTree = "<group>"; };
+		E84CE3792303AA3800F5A0B6 /* ANSClassDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSClassDescription.m; sourceTree = "<group>"; };
+		E84CE37A2303AA3800F5A0B6 /* ANSClassDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSClassDescription.h; sourceTree = "<group>"; };
+		E84CE37B2303AA3800F5A0B6 /* ANSTypeDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSTypeDescription.m; sourceTree = "<group>"; };
+		E84CE37C2303AA3800F5A0B6 /* ANSPropertyDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSPropertyDescription.m; sourceTree = "<group>"; };
+		E84CE37D2303AA3800F5A0B6 /* ANSEnumDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSEnumDescription.h; sourceTree = "<group>"; };
+		E84CE37E2303AA3800F5A0B6 /* ANSPropertyDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSPropertyDescription.h; sourceTree = "<group>"; };
+		E84CE37F2303AA3800F5A0B6 /* ANSTypeDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSTypeDescription.h; sourceTree = "<group>"; };
+		E84CE3802303AA3800F5A0B6 /* ANSEnumDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSEnumDescription.m; sourceTree = "<group>"; };
+		E84CE3892303AA4B00F5A0B6 /* ANSObjectIdentityProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSObjectIdentityProvider.h; sourceTree = "<group>"; };
+		E84CE38A2303AA4B00F5A0B6 /* ANSApplicationStateSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSApplicationStateSerializer.m; sourceTree = "<group>"; };
+		E84CE38B2303AA4B00F5A0B6 /* ANSObjectSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSObjectSelector.h; sourceTree = "<group>"; };
+		E84CE38C2303AA4B00F5A0B6 /* ANSSequenceGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSSequenceGenerator.m; sourceTree = "<group>"; };
+		E84CE38D2303AA4B00F5A0B6 /* ANSObjectSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSObjectSerializer.m; sourceTree = "<group>"; };
+		E84CE38E2303AA4B00F5A0B6 /* ANSObjectSerializerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSObjectSerializerConfig.h; sourceTree = "<group>"; };
+		E84CE38F2303AA4B00F5A0B6 /* ANSObjectIdentityProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSObjectIdentityProvider.m; sourceTree = "<group>"; };
+		E84CE3902303AA4B00F5A0B6 /* ANSObjectSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSObjectSelector.m; sourceTree = "<group>"; };
+		E84CE3912303AA4B00F5A0B6 /* ANSSequenceGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSSequenceGenerator.h; sourceTree = "<group>"; };
+		E84CE3922303AA4B00F5A0B6 /* ANSObjectSerializerContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSObjectSerializerContext.h; sourceTree = "<group>"; };
+		E84CE3932303AA4B00F5A0B6 /* ANSObjectSerializerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSObjectSerializerConfig.m; sourceTree = "<group>"; };
+		E84CE3942303AA4B00F5A0B6 /* ANSApplicationStateSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSApplicationStateSerializer.h; sourceTree = "<group>"; };
+		E84CE3952303AA4B00F5A0B6 /* ANSObjectSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSObjectSerializer.h; sourceTree = "<group>"; };
+		E84CE3962303AA4B00F5A0B6 /* ANSObjectSerializerContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSObjectSerializerContext.m; sourceTree = "<group>"; };
+		E84CE3A52303AA5C00F5A0B6 /* ANSUITableViewBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSUITableViewBinding.m; sourceTree = "<group>"; };
+		E84CE3A62303AA5C00F5A0B6 /* ANSUIControlBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSUIControlBinding.m; sourceTree = "<group>"; };
+		E84CE3A72303AA5C00F5A0B6 /* ANSUIControlBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSUIControlBinding.h; sourceTree = "<group>"; };
+		E84CE3A82303AA5C00F5A0B6 /* ANSEventBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSEventBinding.m; sourceTree = "<group>"; };
+		E84CE3A92303AA5C00F5A0B6 /* ANSUITableViewBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSUITableViewBinding.h; sourceTree = "<group>"; };
+		E84CE3AA2303AA5C00F5A0B6 /* ANSDesignerEventBindingResponseMesssage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDesignerEventBindingResponseMesssage.m; sourceTree = "<group>"; };
+		E84CE3AB2303AA5C00F5A0B6 /* ANSDesignerEventBindingMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDesignerEventBindingMessage.h; sourceTree = "<group>"; };
+		E84CE3AC2303AA5C00F5A0B6 /* ANSDesignerTrackMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDesignerTrackMessage.m; sourceTree = "<group>"; };
+		E84CE3AD2303AA5C00F5A0B6 /* ANSDesignerEventBindingRequestMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDesignerEventBindingRequestMessage.m; sourceTree = "<group>"; };
+		E84CE3AE2303AA5C00F5A0B6 /* ANSEventBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSEventBinding.h; sourceTree = "<group>"; };
+		E84CE3B92303AA6900F5A0B6 /* ANSDesignerSessionCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDesignerSessionCollection.h; sourceTree = "<group>"; };
+		E84CE3BA2303AA6900F5A0B6 /* ANSAbstractABTestDesignerMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSAbstractABTestDesignerMessage.m; sourceTree = "<group>"; };
+		E84CE3BB2303AA6900F5A0B6 /* ANSABTestDesignerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSABTestDesignerConnection.h; sourceTree = "<group>"; };
+		E84CE3BC2303AA6A00F5A0B6 /* ANSWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSWebSocket.m; sourceTree = "<group>"; };
+		E84CE3BD2303AA6A00F5A0B6 /* ANSAbstractABTestDesignerMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSAbstractABTestDesignerMessage.h; sourceTree = "<group>"; };
+		E84CE3BE2303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSABTestDesignerSnapshotResponseMessage.h; sourceTree = "<group>"; };
+		E84CE3BF2303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSABTestDesignerDeviceInfoRequestMessage.h; sourceTree = "<group>"; };
+		E84CE3C02303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSABTestDesignerSnapshotRequestMessage.h; sourceTree = "<group>"; };
+		E84CE3C12303AA6A00F5A0B6 /* ANSWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSWebSocket.h; sourceTree = "<group>"; };
+		E84CE3C22303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSABTestDesignerDeviceInfoResponseMessage.m; sourceTree = "<group>"; };
+		E84CE3C32303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSABTestDesignerDeviceInfoResponseMessage.h; sourceTree = "<group>"; };
+		E84CE3C42303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSABTestDesignerDeviceInfoRequestMessage.m; sourceTree = "<group>"; };
+		E84CE3C52303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSABTestDesignerSnapshotRequestMessage.m; sourceTree = "<group>"; };
+		E84CE3C62303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSABTestDesignerSnapshotResponseMessage.m; sourceTree = "<group>"; };
+		E84CE3C72303AA6A00F5A0B6 /* ANSABTestDesignerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSABTestDesignerConnection.m; sourceTree = "<group>"; };
+		E84CE3C82303AA6A00F5A0B6 /* ANSABTestDesignerMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSABTestDesignerMessage.h; sourceTree = "<group>"; };
+		E85097C723682CE7003214A1 /* ANSDateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSDateUtil.h; sourceTree = "<group>"; };
+		E85097C823682CE7003214A1 /* ANSDateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSDateUtil.m; sourceTree = "<group>"; };
+		E88B79662361A94400F421BB /* NSString+ANSDBEncrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ANSDBEncrypt.h"; sourceTree = "<group>"; };
+		E88B79672361A94400F421BB /* NSString+ANSDBEncrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ANSDBEncrypt.m"; sourceTree = "<group>"; };
+		E88B796B2362E76600F421BB /* ANSAppStartSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSAppStartSource.h; sourceTree = "<group>"; };
+		E88B796C2362E76600F421BB /* ANSAppStartSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSAppStartSource.m; sourceTree = "<group>"; };
+		E897EB2222FACE38006EE639 /* AnalysysAgent.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AnalysysAgent.bundle; sourceTree = "<group>"; };
+		E8A50138236AB75C00D41876 /* ANSTimeCheckManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSTimeCheckManager.h; sourceTree = "<group>"; };
+		E8A50139236AB75C00D41876 /* ANSTimeCheckManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSTimeCheckManager.m; sourceTree = "<group>"; };
+		E8BE4438234085E400C3FE74 /* ANSAutoTrackProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSAutoTrackProperty.h; sourceTree = "<group>"; };
+		E8BE4439234085E400C3FE74 /* UIView+ANSAutoTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ANSAutoTrack.h"; sourceTree = "<group>"; };
+		E8BE443A234085E400C3FE74 /* UIView+ANSAutoTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ANSAutoTrack.m"; sourceTree = "<group>"; };
+		E8BFFEF82383BCEF00D3DE8B /* UIView+ANSPathUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ANSPathUtils.h"; sourceTree = "<group>"; };
+		E8BFFEF92383BCEF00D3DE8B /* UIView+ANSPathUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ANSPathUtils.m"; sourceTree = "<group>"; };
+		E8C67D5D23545A9900EC75B8 /* AnalysysLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalysysLogger.h; sourceTree = "<group>"; };
+		E8C67D5E23545A9900EC75B8 /* AnalysysLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnalysysLogger.m; sourceTree = "<group>"; };
+		E8CD64C624D149F4002FAB55 /* UIView+ANSScreenDisplaying.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ANSScreenDisplaying.h"; sourceTree = "<group>"; };
+		E8CD64C724D149F4002FAB55 /* UIView+ANSScreenDisplaying.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ANSScreenDisplaying.m"; sourceTree = "<group>"; };
+		E8DA6A7B2333662A00B56AB0 /* ANSConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSConst.m; sourceTree = "<group>"; };
+		E8DA6A7C2333663100B56AB0 /* ANSConst+private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ANSConst+private.h"; sourceTree = "<group>"; };
+		E8DA6A7D2333663100B56AB0 /* ANSConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSConst.h; sourceTree = "<group>"; };
+		E8E396F624DBD9720019C4C7 /* ANSSecurityPolicy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANSSecurityPolicy.h; sourceTree = "<group>"; };
+		E8E396F724DBD9720019C4C7 /* ANSSecurityPolicy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANSSecurityPolicy.m; sourceTree = "<group>"; };
+		E8E396FC24DBF0B30019C4C7 /* ANSNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSNetworking.h; sourceTree = "<group>"; };
+		E8EAE6DC22FA837F00C29545 /* AnalysysAgent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalysysAgent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EAE6E022FA837F00C29545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EAE6EC22FA83A300C29545 /* AnalysysEncrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalysysEncrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EAE6EF22FA83A300C29545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EAE6F922FA83BA00C29545 /* AnalysysVisual.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalysysVisual.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EAE6FB22FA83BA00C29545 /* AnalysysVisual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalysysVisual.h; sourceTree = "<group>"; };
+		E8EAE6FC22FA83BA00C29545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EAE70622FA83CC00C29545 /* AnalysysPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnalysysPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EAE70822FA83CC00C29545 /* AnalysysPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalysysPush.h; sourceTree = "<group>"; };
+		E8EAE70922FA83CC00C29545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8EAE72522FA917700C29545 /* ANSDataConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDataConfig.h; sourceTree = "<group>"; };
+		E8EAE72622FA917700C29545 /* ANSHeatMapFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSHeatMapFunc.m; sourceTree = "<group>"; };
+		E8EAE72722FA917700C29545 /* ANSDataCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDataCheck.h; sourceTree = "<group>"; };
+		E8EAE72822FA917700C29545 /* ANSDataProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDataProcessing.h; sourceTree = "<group>"; };
+		E8EAE72922FA917700C29545 /* ANSDataCheckLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDataCheckLog.m; sourceTree = "<group>"; };
+		E8EAE72A22FA917700C29545 /* ANSDataCheckRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDataCheckRouter.h; sourceTree = "<group>"; };
+		E8EAE72B22FA917700C29545 /* ANSDataFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDataFunc.h; sourceTree = "<group>"; };
+		E8EAE72C22FA917700C29545 /* ANSHeatMapFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSHeatMapFunc.h; sourceTree = "<group>"; };
+		E8EAE72D22FA917700C29545 /* ANSDataConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDataConfig.m; sourceTree = "<group>"; };
+		E8EAE72E22FA917700C29545 /* ANSDataCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDataCheck.m; sourceTree = "<group>"; };
+		E8EAE72F22FA917700C29545 /* ANSDataProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDataProcessing.m; sourceTree = "<group>"; };
+		E8EAE73022FA917700C29545 /* ANSDataFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDataFunc.m; sourceTree = "<group>"; };
+		E8EAE73122FA917700C29545 /* ANSDataCheckRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDataCheckRouter.m; sourceTree = "<group>"; };
+		E8EAE73222FA917700C29545 /* ANSDataCheckLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDataCheckLog.h; sourceTree = "<group>"; };
+		E8EAE73422FA917700C29545 /* NSObject+ANSSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ANSSwizzling.h"; sourceTree = "<group>"; };
+		E8EAE73622FA917700C29545 /* NSString+ANSMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ANSMD5.m"; sourceTree = "<group>"; };
+		E8EAE73722FA917700C29545 /* NSInvocation+ANSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+ANSHelper.h"; sourceTree = "<group>"; };
+		E8EAE73822FA917700C29545 /* UIView+ANSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ANSHelper.h"; sourceTree = "<group>"; };
+		E8EAE73922FA917700C29545 /* NSThread+ANSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+ANSHelper.m"; sourceTree = "<group>"; };
+		E8EAE73A22FA917700C29545 /* NSString+ANSMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ANSMD5.h"; sourceTree = "<group>"; };
+		E8EAE73C22FA917700C29545 /* NSObject+ANSSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ANSSwizzling.m"; sourceTree = "<group>"; };
+		E8EAE73D22FA917700C29545 /* NSThread+ANSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+ANSHelper.h"; sourceTree = "<group>"; };
+		E8EAE73E22FA917700C29545 /* UIView+ANSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ANSHelper.m"; sourceTree = "<group>"; };
+		E8EAE73F22FA917700C29545 /* NSInvocation+ANSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+ANSHelper.m"; sourceTree = "<group>"; };
+		E8EAE74022FA917700C29545 /* AnalysysSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalysysSDK.m; sourceTree = "<group>"; };
+		E8EAE74122FA917700C29545 /* AnalysysAgentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalysysAgentConfig.h; sourceTree = "<group>"; };
+		E8EAE74422FA917800C29545 /* ANSPageAutoTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSPageAutoTrack.m; sourceTree = "<group>"; };
+		E8EAE74522FA917800C29545 /* ANSOpenURLAutoTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSOpenURLAutoTrack.m; sourceTree = "<group>"; };
+		E8EAE74622FA917800C29545 /* ANSDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDeviceInfo.m; sourceTree = "<group>"; };
+		E8EAE74722FA917800C29545 /* ANSHybrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSHybrid.m; sourceTree = "<group>"; };
+		E8EAE74A22FA917800C29545 /* ANSHeatMapAutoTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSHeatMapAutoTrack.m; sourceTree = "<group>"; };
+		E8EAE74C22FA917800C29545 /* ANSDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDeviceInfo.h; sourceTree = "<group>"; };
+		E8EAE74D22FA917800C29545 /* ANSOpenURLAutoTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSOpenURLAutoTrack.h; sourceTree = "<group>"; };
+		E8EAE74E22FA917800C29545 /* ANSPageAutoTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSPageAutoTrack.h; sourceTree = "<group>"; };
+		E8EAE74F22FA917800C29545 /* ANSHybrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSHybrid.h; sourceTree = "<group>"; };
+		E8EAE75122FA917800C29545 /* ANSHeatMapAutoTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSHeatMapAutoTrack.h; sourceTree = "<group>"; };
+		E8EAE75222FA917800C29545 /* ANSNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSNetworking.m; sourceTree = "<group>"; };
+		E8EAE75422FA917800C29545 /* ANSModuleProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSModuleProcessing.h; sourceTree = "<group>"; };
+		E8EAE75522FA917800C29545 /* ANSModuleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSModuleConfig.h; sourceTree = "<group>"; };
+		E8EAE75622FA917800C29545 /* ANSModuleProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSModuleProcessing.m; sourceTree = "<group>"; };
+		E8EAE75722FA917800C29545 /* ANSModuleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSModuleConfig.m; sourceTree = "<group>"; };
+		E8EAE75822FA917800C29545 /* AnalysysAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalysysAgent.m; sourceTree = "<group>"; };
+		E8EAE75922FA917800C29545 /* AnalysysSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalysysSDK.h; sourceTree = "<group>"; };
+		E8EAE75A22FA917800C29545 /* AnalysysAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalysysAgent.h; sourceTree = "<group>"; };
+		E8EAE75B22FA917800C29545 /* AnalysysAgentConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalysysAgentConfig.m; sourceTree = "<group>"; };
+		E8EAE75D22FA917800C29545 /* ANSSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSSwizzler.h; sourceTree = "<group>"; };
+		E8EAE75E22FA917800C29545 /* ANSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSFileManager.h; sourceTree = "<group>"; };
+		E8EAE75F22FA917800C29545 /* ANSMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSMediator.m; sourceTree = "<group>"; };
+		E8EAE76022FA917800C29545 /* ANSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSUtil.h; sourceTree = "<group>"; };
+		E8EAE76322FA917800C29545 /* ANSGzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSGzip.m; sourceTree = "<group>"; };
+		E8EAE76422FA917800C29545 /* ANSJsonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSJsonUtil.h; sourceTree = "<group>"; };
+		E8EAE76522FA917800C29545 /* ANSBundleUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSBundleUtil.m; sourceTree = "<group>"; };
+		E8EAE76622FA917800C29545 /* ANSMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSMediator.h; sourceTree = "<group>"; };
+		E8EAE76722FA917800C29545 /* ANSUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSUtil.m; sourceTree = "<group>"; };
+		E8EAE76822FA917800C29545 /* ANSSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSSwizzler.m; sourceTree = "<group>"; };
+		E8EAE76922FA917800C29545 /* ANSFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSFileManager.m; sourceTree = "<group>"; };
+		E8EAE76A22FA917800C29545 /* ANSGzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSGzip.h; sourceTree = "<group>"; };
+		E8EAE76C22FA917800C29545 /* ANSBundleUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSBundleUtil.h; sourceTree = "<group>"; };
+		E8EAE76D22FA917800C29545 /* ANSJsonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSJsonUtil.m; sourceTree = "<group>"; };
+		E8EAE76F22FA917800C29545 /* ANSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSReachability.m; sourceTree = "<group>"; };
+		E8EAE77022FA917800C29545 /* ANSTelephonyNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSTelephonyNetwork.m; sourceTree = "<group>"; };
+		E8EAE77122FA917800C29545 /* ANSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSReachability.h; sourceTree = "<group>"; };
+		E8EAE77222FA917800C29545 /* ANSTelephonyNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSTelephonyNetwork.h; sourceTree = "<group>"; };
+		E8EAE77422FA917800C29545 /* ANSDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDatabase.h; sourceTree = "<group>"; };
+		E8EAE77622FA917800C29545 /* ANSDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDatabase.m; sourceTree = "<group>"; };
+		E8EAE77922FA917800C29545 /* ANSStrategyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSStrategyManager.h; sourceTree = "<group>"; };
+		E8EAE77A22FA917800C29545 /* ANSDefaultStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDefaultStrategy.h; sourceTree = "<group>"; };
+		E8EAE77B22FA917800C29545 /* ANSDelayStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDelayStrategy.m; sourceTree = "<group>"; };
+		E8EAE77C22FA917800C29545 /* ANSUserStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSUserStrategy.h; sourceTree = "<group>"; };
+		E8EAE77D22FA917800C29545 /* ANSServerStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSServerStrategy.m; sourceTree = "<group>"; };
+		E8EAE77E22FA917800C29545 /* ANSStrategyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSStrategyProtocol.h; sourceTree = "<group>"; };
+		E8EAE77F22FA917800C29545 /* ANSStrategyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSStrategyManager.m; sourceTree = "<group>"; };
+		E8EAE78022FA917800C29545 /* ANSServerStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSServerStrategy.h; sourceTree = "<group>"; };
+		E8EAE78122FA917800C29545 /* ANSUserStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSUserStrategy.m; sourceTree = "<group>"; };
+		E8EAE78222FA917800C29545 /* ANSDelayStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDelayStrategy.h; sourceTree = "<group>"; };
+		E8EAE78322FA917800C29545 /* ANSDefaultStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDefaultStrategy.m; sourceTree = "<group>"; };
+		E8EAE7DC22FA918A00C29545 /* ANSAESAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSAESAlgorithm.h; sourceTree = "<group>"; };
+		E8EAE7DD22FA918A00C29545 /* ANSAESAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSAESAlgorithm.m; sourceTree = "<group>"; };
+		E8EAE7DE22FA918A00C29545 /* ANSDataEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSDataEncrypt.h; sourceTree = "<group>"; };
+		E8EAE7DF22FA918A00C29545 /* ANSDataEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSDataEncrypt.m; sourceTree = "<group>"; };
+		E8EAE7E422FA919900C29545 /* AnalysysVisual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalysysVisual.m; sourceTree = "<group>"; };
+		E8EAE7E522FA919A00C29545 /* ANSVisualSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSVisualSDK.m; sourceTree = "<group>"; };
+		E8EAE7E622FA919A00C29545 /* ANSVisualSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSVisualSDK.h; sourceTree = "<group>"; };
+		E8EAE7F022FA919A00C29545 /* ANSNSAttributedStringToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSNSAttributedStringToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7F122FA919A00C29545 /* ANSUIColorToNSStringValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSUIColorToNSStringValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7F222FA919A00C29545 /* ANSCGSizeToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSCGSizeToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7F322FA919A00C29545 /* ANSPassThroughValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSPassThroughValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7F422FA919A00C29545 /* ANSCGRectToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSCGRectToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7F522FA919A00C29545 /* ANSCGPointToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSCGPointToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7F622FA919A00C29545 /* ANSUIEdgeInsetsToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSUIEdgeInsetsToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7F722FA919A00C29545 /* ANSUIFontToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSUIFontToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7F822FA919A00C29545 /* ANSUIImageToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSUIImageToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7F922FA919A00C29545 /* ANSCGColorRefToNSStringValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSCGColorRefToNSStringValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7FA22FA919A00C29545 /* ANSNSNumberToCGFloatValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSNSNumberToCGFloatValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7FB22FA919A00C29545 /* ANSCGAffineTransformToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSCGAffineTransformToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7FC22FA919A00C29545 /* ANSCATransform3DToNSDictionaryValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSCATransform3DToNSDictionaryValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7FD22FA919A00C29545 /* ANSBOOLToNSNumberValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSBOOLToNSNumberValueTransformer.m; sourceTree = "<group>"; };
+		E8EAE7FE22FA919A00C29545 /* ANSValueTransformers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSValueTransformers.h; sourceTree = "<group>"; };
+		E8EAE87B22FA91A500C29545 /* AnalysysPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalysysPush.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8EAE6D922FA837F00C29545 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE6E922FA83A300C29545 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE6F622FA83BA00C29545 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE70322FA83CC00C29545 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4875726B23E7F7BC008F7910 /* VisualToos */ = {
+			isa = PBXGroup;
+			children = (
+				483AB6C723F4E8B100059D46 /* ANSVisualConst.h */,
+				483AB6C823F4E8B100059D46 /* ANSVisualConst.m */,
+				485082AE23ED09D8000CE9E8 /* ANSVisualData.h */,
+				485082AD23ED09D8000CE9E8 /* ANSVisualData.m */,
+				485B0A0F2431CA9400E6427D /* ANSVisualRegular.h */,
+				485B0A102431CA9400E6427D /* ANSVisualRegular.m */,
+				485082A923ED082D000CE9E8 /* ANSVisualSearch.h */,
+				485082AA23ED082D000CE9E8 /* ANSVisualSearch.m */,
+				483AB6CB23F4F9AE00059D46 /* ANSVisualSwizzler.h */,
+				483AB6CC23F4F9AE00059D46 /* ANSVisualSwizzler.m */,
+				4875727423E7F86F008F7910 /* ANSVisualIdentiferProtocol.h */,
+				4875727323E7F86F008F7910 /* UIView+ANSVisualIdentifer.h */,
+				4875727223E7F86F008F7910 /* UIView+ANSVisualIdentifer.m */,
+			);
+			path = VisualToos;
+			sourceTree = "<group>";
+		};
+		489AE16323617B3400880546 /* LogModelManage */ = {
+			isa = PBXGroup;
+			children = (
+				489AE16723617B3400880546 /* ANSAllBuryPointModel.h */,
+				489AE16423617B3400880546 /* ANSAllBuryPointModel.m */,
+				489AE16823617B3400880546 /* ANSBaseModel.h */,
+				489AE16623617B3400880546 /* ANSBaseModel.m */,
+				489AE16523617B3400880546 /* ANSKeyNameConst.h */,
+				489AE16923617B3400880546 /* ANSKeyNameConst.m */,
+				489AE17023617CA100880546 /* ANSLogParamsUtil.h */,
+				489AE17123617CA100880546 /* ANSLogParamsUtil.m */,
+			);
+			path = LogModelManage;
+			sourceTree = "<group>";
+		};
+		48F41AF82372BCAD0069E96D /* AllBuryPoint */ = {
+			isa = PBXGroup;
+			children = (
+				48F41AFA2372BCDA0069E96D /* ANSAllBuryPoint.h */,
+				48F41AF92372BCDA0069E96D /* ANSAllBuryPoint.m */,
+				48F41AFD2372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.h */,
+				48F41AFE2372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.m */,
+				48F41B012372BDE40069E96D /* ANSAllBuryIdentiferProtocol.h */,
+			);
+			path = AllBuryPoint;
+			sourceTree = "<group>";
+		};
+		E8EAE6D222FA837F00C29545 = {
+			isa = PBXGroup;
+			children = (
+				E897EB2222FACE38006EE639 /* AnalysysAgent.bundle */,
+				E8EAE6DE22FA837F00C29545 /* AnalysysAgent */,
+				E8EAE6ED22FA83A300C29545 /* AnalysysEncrypt */,
+				E8EAE6FA22FA83BA00C29545 /* AnalysysVisual */,
+				E8EAE70722FA83CC00C29545 /* AnalysysPush */,
+				E8EAE6DD22FA837F00C29545 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8EAE6DD22FA837F00C29545 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE6DC22FA837F00C29545 /* AnalysysAgent.framework */,
+				E8EAE6EC22FA83A300C29545 /* AnalysysEncrypt.framework */,
+				E8EAE6F922FA83BA00C29545 /* AnalysysVisual.framework */,
+				E8EAE70622FA83CC00C29545 /* AnalysysPush.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8EAE6DE22FA837F00C29545 /* AnalysysAgent */ = {
+			isa = PBXGroup;
+			children = (
+				38B80F9725C7F85800E18FD8 /* ANSWKScriptMessageHandler.h */,
+				38B80F9625C7F85800E18FD8 /* ANSWKScriptMessageHandler.m */,
+				E8EAE75A22FA917800C29545 /* AnalysysAgent.h */,
+				E8EAE75822FA917800C29545 /* AnalysysAgent.m */,
+				E8EAE74122FA917700C29545 /* AnalysysAgentConfig.h */,
+				E8EAE75B22FA917800C29545 /* AnalysysAgentConfig.m */,
+				E8DA6A7D2333663100B56AB0 /* ANSConst.h */,
+				E8DA6A7C2333663100B56AB0 /* ANSConst+private.h */,
+				E8DA6A7B2333662A00B56AB0 /* ANSConst.m */,
+				E8EAE75922FA917800C29545 /* AnalysysSDK.h */,
+				E8EAE74022FA917700C29545 /* AnalysysSDK.m */,
+				E8E396F624DBD9720019C4C7 /* ANSSecurityPolicy.h */,
+				E8E396F724DBD9720019C4C7 /* ANSSecurityPolicy.m */,
+				48F41AF82372BCAD0069E96D /* AllBuryPoint */,
+				E8EAE73322FA917700C29545 /* Category */,
+				E8EAE72422FA917700C29545 /* DataConfig */,
+				E8EAE77322FA917800C29545 /* DB */,
+				489AE16323617B3400880546 /* LogModelManage */,
+				E8EAE74222FA917800C29545 /* Module */,
+				E8EAE75322FA917800C29545 /* ModuleConfig */,
+				E8EAE76E22FA917800C29545 /* Network */,
+				E8EAE77822FA917800C29545 /* Strategy */,
+				E8EAE75C22FA917800C29545 /* Util */,
+				E8EAE6E022FA837F00C29545 /* Info.plist */,
+			);
+			path = AnalysysAgent;
+			sourceTree = "<group>";
+		};
+		E8EAE6ED22FA83A300C29545 /* AnalysysEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE7DC22FA918A00C29545 /* ANSAESAlgorithm.h */,
+				E8EAE7DD22FA918A00C29545 /* ANSAESAlgorithm.m */,
+				E8EAE7DE22FA918A00C29545 /* ANSDataEncrypt.h */,
+				E8EAE7DF22FA918A00C29545 /* ANSDataEncrypt.m */,
+				E8EAE6EF22FA83A300C29545 /* Info.plist */,
+			);
+			path = AnalysysEncrypt;
+			sourceTree = "<group>";
+		};
+		E8EAE6FA22FA83BA00C29545 /* AnalysysVisual */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE6FB22FA83BA00C29545 /* AnalysysVisual.h */,
+				E8EAE7E422FA919900C29545 /* AnalysysVisual.m */,
+				E8EAE7E622FA919A00C29545 /* ANSVisualSDK.h */,
+				E8EAE7E522FA919A00C29545 /* ANSVisualSDK.m */,
+				4808C711246A93E7001E2B1C /* ANSVisualHybrid.h */,
+				4808C712246A93E7001E2B1C /* ANSVisualHybrid.m */,
+				E8EAE7E722FA919A00C29545 /* Categories */,
+				E8EAE7EE22FA919A00C29545 /* DesignerSupport */,
+				E8EAE6FC22FA83BA00C29545 /* Info.plist */,
+			);
+			path = AnalysysVisual;
+			sourceTree = "<group>";
+		};
+		E8EAE70722FA83CC00C29545 /* AnalysysPush */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE70822FA83CC00C29545 /* AnalysysPush.h */,
+				E8EAE87B22FA91A500C29545 /* AnalysysPush.m */,
+				E8EAE70922FA83CC00C29545 /* Info.plist */,
+			);
+			path = AnalysysPush;
+			sourceTree = "<group>";
+		};
+		E8EAE72422FA917700C29545 /* DataConfig */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE73222FA917700C29545 /* ANSDataCheckLog.h */,
+				E8EAE72922FA917700C29545 /* ANSDataCheckLog.m */,
+				E8EAE72522FA917700C29545 /* ANSDataConfig.h */,
+				E8EAE72D22FA917700C29545 /* ANSDataConfig.m */,
+				E8EAE72822FA917700C29545 /* ANSDataProcessing.h */,
+				E8EAE72F22FA917700C29545 /* ANSDataProcessing.m */,
+				E8EAE72A22FA917700C29545 /* ANSDataCheckRouter.h */,
+				E8EAE73122FA917700C29545 /* ANSDataCheckRouter.m */,
+				E8EAE72722FA917700C29545 /* ANSDataCheck.h */,
+				E8EAE72E22FA917700C29545 /* ANSDataCheck.m */,
+				E8EAE72B22FA917700C29545 /* ANSDataFunc.h */,
+				E8EAE73022FA917700C29545 /* ANSDataFunc.m */,
+				E8EAE72C22FA917700C29545 /* ANSHeatMapFunc.h */,
+				E8EAE72622FA917700C29545 /* ANSHeatMapFunc.m */,
+			);
+			path = DataConfig;
+			sourceTree = "<group>";
+		};
+		E8EAE73322FA917700C29545 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE73422FA917700C29545 /* NSObject+ANSSwizzling.h */,
+				E8EAE73C22FA917700C29545 /* NSObject+ANSSwizzling.m */,
+				E8EAE73D22FA917700C29545 /* NSThread+ANSHelper.h */,
+				E8EAE73922FA917700C29545 /* NSThread+ANSHelper.m */,
+				E8EAE73A22FA917700C29545 /* NSString+ANSMD5.h */,
+				E8EAE73622FA917700C29545 /* NSString+ANSMD5.m */,
+				E8EAE73722FA917700C29545 /* NSInvocation+ANSHelper.h */,
+				E8EAE73F22FA917700C29545 /* NSInvocation+ANSHelper.m */,
+				E8EAE73822FA917700C29545 /* UIView+ANSHelper.h */,
+				E8EAE73E22FA917700C29545 /* UIView+ANSHelper.m */,
+				E8BE4438234085E400C3FE74 /* ANSAutoTrackProperty.h */,
+				482198F92362CB1D00AA4380 /* ANSAutoTrackCellProperty.h */,
+				E8BE4439234085E400C3FE74 /* UIView+ANSAutoTrack.h */,
+				E8BE443A234085E400C3FE74 /* UIView+ANSAutoTrack.m */,
+				E88B79662361A94400F421BB /* NSString+ANSDBEncrypt.h */,
+				E88B79672361A94400F421BB /* NSString+ANSDBEncrypt.m */,
+				E8BFFEF82383BCEF00D3DE8B /* UIView+ANSPathUtils.h */,
+				E8BFFEF92383BCEF00D3DE8B /* UIView+ANSPathUtils.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E8EAE74222FA917800C29545 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				382E68F925E4B192008D319D /* PageViewDuration.h */,
+				382E68F825E4B192008D319D /* PageViewDuration.m */,
+				486DA0FE253E96F400390997 /* ANSSessionManager.h */,
+				486DA0FF253E96F400390997 /* ANSSessionManager.m */,
+				487AAD33235DBCD500B444CC /* ANSUncaughtExceptionHandler.h */,
+				487AAD34235DBCD500B444CC /* ANSUncaughtExceptionHandler.m */,
+				E8EAE74C22FA917800C29545 /* ANSDeviceInfo.h */,
+				E8EAE74622FA917800C29545 /* ANSDeviceInfo.m */,
+				E8EAE74F22FA917800C29545 /* ANSHybrid.h */,
+				E8EAE74722FA917800C29545 /* ANSHybrid.m */,
+				E8EAE74D22FA917800C29545 /* ANSOpenURLAutoTrack.h */,
+				E8EAE74522FA917800C29545 /* ANSOpenURLAutoTrack.m */,
+				E8EAE74E22FA917800C29545 /* ANSPageAutoTrack.h */,
+				E8EAE74422FA917800C29545 /* ANSPageAutoTrack.m */,
+				E8EAE75122FA917800C29545 /* ANSHeatMapAutoTrack.h */,
+				E8EAE74A22FA917800C29545 /* ANSHeatMapAutoTrack.m */,
+				E8C67D5D23545A9900EC75B8 /* AnalysysLogger.h */,
+				E8C67D5E23545A9900EC75B8 /* AnalysysLogger.m */,
+				E88B796B2362E76600F421BB /* ANSAppStartSource.h */,
+				E88B796C2362E76600F421BB /* ANSAppStartSource.m */,
+				E8A50138236AB75C00D41876 /* ANSTimeCheckManager.h */,
+				E8A50139236AB75C00D41876 /* ANSTimeCheckManager.m */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		E8EAE75322FA917800C29545 /* ModuleConfig */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE75522FA917800C29545 /* ANSModuleConfig.h */,
+				E8EAE75722FA917800C29545 /* ANSModuleConfig.m */,
+				E8EAE75422FA917800C29545 /* ANSModuleProcessing.h */,
+				E8EAE75622FA917800C29545 /* ANSModuleProcessing.m */,
+			);
+			path = ModuleConfig;
+			sourceTree = "<group>";
+		};
+		E8EAE75C22FA917800C29545 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				487C00CB238E1652000745A7 /* ANSProtocolSwizzler.h */,
+				487C00CC238E1652000745A7 /* ANSProtocolSwizzler.m */,
+				E8EAE75D22FA917800C29545 /* ANSSwizzler.h */,
+				E8EAE76822FA917800C29545 /* ANSSwizzler.m */,
+				88D5F07F23029A1800F2C501 /* ANSSwizzlerNoConflict.m */,
+				E8EAE75E22FA917800C29545 /* ANSFileManager.h */,
+				E8EAE76922FA917800C29545 /* ANSFileManager.m */,
+				48A73D00234F183200938D96 /* ANSKeychainItemWrapper.h */,
+				48A73D01234F183200938D96 /* ANSKeychainItemWrapper.m */,
+				E8EAE76622FA917800C29545 /* ANSMediator.h */,
+				E8EAE75F22FA917800C29545 /* ANSMediator.m */,
+				E8EAE76022FA917800C29545 /* ANSUtil.h */,
+				E8EAE76722FA917800C29545 /* ANSUtil.m */,
+				E80D4A932356F8DB001E329F /* ANSEncryptUtis.h */,
+				E80D4A942356F8DB001E329F /* ANSEncryptUtis.m */,
+				E80D4A8F2356F898001E329F /* ANSControllerUtils.h */,
+				E80D4A902356F898001E329F /* ANSControllerUtils.m */,
+				E8EAE76A22FA917800C29545 /* ANSGzip.h */,
+				E8EAE76322FA917800C29545 /* ANSGzip.m */,
+				E8EAE76422FA917800C29545 /* ANSJsonUtil.h */,
+				E8EAE76D22FA917800C29545 /* ANSJsonUtil.m */,
+				E8EAE76C22FA917800C29545 /* ANSBundleUtil.h */,
+				E8EAE76522FA917800C29545 /* ANSBundleUtil.m */,
+				4810D88A23502629004A60A5 /* ANSQueue.h */,
+				4810D88B23502629004A60A5 /* ANSQueue.m */,
+				4810D89C2350590E004A60A5 /* ANSLock.h */,
+				4810D89B2350590D004A60A5 /* ANSLock.m */,
+				E85097C723682CE7003214A1 /* ANSDateUtil.h */,
+				E85097C823682CE7003214A1 /* ANSDateUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E8EAE76E22FA917800C29545 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E8E396FC24DBF0B30019C4C7 /* ANSNetworking.h */,
+				E8EAE75222FA917800C29545 /* ANSNetworking.m */,
+				E8EAE77122FA917800C29545 /* ANSReachability.h */,
+				E8EAE76F22FA917800C29545 /* ANSReachability.m */,
+				E8EAE77222FA917800C29545 /* ANSTelephonyNetwork.h */,
+				E8EAE77022FA917800C29545 /* ANSTelephonyNetwork.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E8EAE77322FA917800C29545 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE77422FA917800C29545 /* ANSDatabase.h */,
+				E8EAE77622FA917800C29545 /* ANSDatabase.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		E8EAE77822FA917800C29545 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE77E22FA917800C29545 /* ANSStrategyProtocol.h */,
+				E8EAE77922FA917800C29545 /* ANSStrategyManager.h */,
+				E8EAE77F22FA917800C29545 /* ANSStrategyManager.m */,
+				E8EAE78022FA917800C29545 /* ANSServerStrategy.h */,
+				E8EAE77D22FA917800C29545 /* ANSServerStrategy.m */,
+				E8EAE77C22FA917800C29545 /* ANSUserStrategy.h */,
+				E8EAE78122FA917800C29545 /* ANSUserStrategy.m */,
+				E8EAE78222FA917800C29545 /* ANSDelayStrategy.h */,
+				E8EAE77B22FA917800C29545 /* ANSDelayStrategy.m */,
+				E8EAE77A22FA917800C29545 /* ANSDefaultStrategy.h */,
+				E8EAE78322FA917800C29545 /* ANSDefaultStrategy.m */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		E8EAE7E722FA919A00C29545 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E84CE3712303AA1900F5A0B6 /* UIViewController+ANSSwizzling.h */,
+				E84CE3722303AA1A00F5A0B6 /* UIViewController+ANSSwizzling.m */,
+				482937B8246E4B4F005C948F /* UIView+ViewNode.h */,
+				482937B9246E4B4F005C948F /* UIView+ViewNode.m */,
+				E8CD64C624D149F4002FAB55 /* UIView+ANSScreenDisplaying.h */,
+				E8CD64C724D149F4002FAB55 /* UIView+ANSScreenDisplaying.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E8EAE7EE22FA919A00C29545 /* DesignerSupport */ = {
+			isa = PBXGroup;
+			children = (
+				4875726B23E7F7BC008F7910 /* VisualToos */,
+				E8EAE7EF22FA919A00C29545 /* Value Transformers */,
+				E8EAE7FF22FA919A00C29545 /* Serialization */,
+				E8EAE81722FA919A00C29545 /* EventBinding */,
+				E8EAE82222FA919A00C29545 /* DesignerMessages */,
+			);
+			path = DesignerSupport;
+			sourceTree = "<group>";
+		};
+		E8EAE7EF22FA919A00C29545 /* Value Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				E8EAE7F022FA919A00C29545 /* ANSNSAttributedStringToNSDictionaryValueTransformer.m */,
+				E8EAE7F122FA919A00C29545 /* ANSUIColorToNSStringValueTransformer.m */,
+				E8EAE7F222FA919A00C29545 /* ANSCGSizeToNSDictionaryValueTransformer.m */,
+				E8EAE7F322FA919A00C29545 /* ANSPassThroughValueTransformer.m */,
+				E8EAE7F422FA919A00C29545 /* ANSCGRectToNSDictionaryValueTransformer.m */,
+				E8EAE7F522FA919A00C29545 /* ANSCGPointToNSDictionaryValueTransformer.m */,
+				E8EAE7F622FA919A00C29545 /* ANSUIEdgeInsetsToNSDictionaryValueTransformer.m */,
+				E8EAE7F722FA919A00C29545 /* ANSUIFontToNSDictionaryValueTransformer.m */,
+				E8EAE7F822FA919A00C29545 /* ANSUIImageToNSDictionaryValueTransformer.m */,
+				E8EAE7F922FA919A00C29545 /* ANSCGColorRefToNSStringValueTransformer.m */,
+				E8EAE7FA22FA919A00C29545 /* ANSNSNumberToCGFloatValueTransformer.m */,
+				E8EAE7FB22FA919A00C29545 /* ANSCGAffineTransformToNSDictionaryValueTransformer.m */,
+				E8EAE7FC22FA919A00C29545 /* ANSCATransform3DToNSDictionaryValueTransformer.m */,
+				E8EAE7FD22FA919A00C29545 /* ANSBOOLToNSNumberValueTransformer.m */,
+				E8EAE7FE22FA919A00C29545 /* ANSValueTransformers.h */,
+			);
+			path = "Value Transformers";
+			sourceTree = "<group>";
+		};
+		E8EAE7FF22FA919A00C29545 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				E84CE3942303AA4B00F5A0B6 /* ANSApplicationStateSerializer.h */,
+				E84CE38A2303AA4B00F5A0B6 /* ANSApplicationStateSerializer.m */,
+				E84CE3892303AA4B00F5A0B6 /* ANSObjectIdentityProvider.h */,
+				E84CE38F2303AA4B00F5A0B6 /* ANSObjectIdentityProvider.m */,
+				E84CE38B2303AA4B00F5A0B6 /* ANSObjectSelector.h */,
+				E84CE3902303AA4B00F5A0B6 /* ANSObjectSelector.m */,
+				E84CE3952303AA4B00F5A0B6 /* ANSObjectSerializer.h */,
+				E84CE38D2303AA4B00F5A0B6 /* ANSObjectSerializer.m */,
+				E84CE38E2303AA4B00F5A0B6 /* ANSObjectSerializerConfig.h */,
+				E84CE3932303AA4B00F5A0B6 /* ANSObjectSerializerConfig.m */,
+				E84CE3922303AA4B00F5A0B6 /* ANSObjectSerializerContext.h */,
+				E84CE3962303AA4B00F5A0B6 /* ANSObjectSerializerContext.m */,
+				E84CE3912303AA4B00F5A0B6 /* ANSSequenceGenerator.h */,
+				E84CE38C2303AA4B00F5A0B6 /* ANSSequenceGenerator.m */,
+				E8EAE80822FA919A00C29545 /* Description */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+		E8EAE80822FA919A00C29545 /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				E84CE37A2303AA3800F5A0B6 /* ANSClassDescription.h */,
+				E84CE3792303AA3800F5A0B6 /* ANSClassDescription.m */,
+				E84CE37D2303AA3800F5A0B6 /* ANSEnumDescription.h */,
+				E84CE3802303AA3800F5A0B6 /* ANSEnumDescription.m */,
+				E84CE37E2303AA3800F5A0B6 /* ANSPropertyDescription.h */,
+				E84CE37C2303AA3800F5A0B6 /* ANSPropertyDescription.m */,
+				E84CE37F2303AA3800F5A0B6 /* ANSTypeDescription.h */,
+				E84CE37B2303AA3800F5A0B6 /* ANSTypeDescription.m */,
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
+		E8EAE81722FA919A00C29545 /* EventBinding */ = {
+			isa = PBXGroup;
+			children = (
+				E84CE3AB2303AA5C00F5A0B6 /* ANSDesignerEventBindingMessage.h */,
+				E84CE3AD2303AA5C00F5A0B6 /* ANSDesignerEventBindingRequestMessage.m */,
+				E84CE3AA2303AA5C00F5A0B6 /* ANSDesignerEventBindingResponseMesssage.m */,
+				E84CE3AC2303AA5C00F5A0B6 /* ANSDesignerTrackMessage.m */,
+				E84CE3AE2303AA5C00F5A0B6 /* ANSEventBinding.h */,
+				E84CE3A82303AA5C00F5A0B6 /* ANSEventBinding.m */,
+				E84CE3A72303AA5C00F5A0B6 /* ANSUIControlBinding.h */,
+				E84CE3A62303AA5C00F5A0B6 /* ANSUIControlBinding.m */,
+				E84CE3A92303AA5C00F5A0B6 /* ANSUITableViewBinding.h */,
+				E84CE3A52303AA5C00F5A0B6 /* ANSUITableViewBinding.m */,
+			);
+			path = EventBinding;
+			sourceTree = "<group>";
+		};
+		E8EAE82222FA919A00C29545 /* DesignerMessages */ = {
+			isa = PBXGroup;
+			children = (
+				E84CE3BD2303AA6A00F5A0B6 /* ANSAbstractABTestDesignerMessage.h */,
+				E84CE3BA2303AA6900F5A0B6 /* ANSAbstractABTestDesignerMessage.m */,
+				E84CE3BB2303AA6900F5A0B6 /* ANSABTestDesignerConnection.h */,
+				E84CE3C72303AA6A00F5A0B6 /* ANSABTestDesignerConnection.m */,
+				E84CE3BF2303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.h */,
+				E84CE3C42303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.m */,
+				E84CE3C32303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.h */,
+				E84CE3C22303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.m */,
+				E84CE3C82303AA6A00F5A0B6 /* ANSABTestDesignerMessage.h */,
+				E84CE3C02303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.h */,
+				E84CE3C52303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.m */,
+				E84CE3BE2303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.h */,
+				E84CE3C62303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.m */,
+				E84CE3B92303AA6900F5A0B6 /* ANSDesignerSessionCollection.h */,
+				E84CE3C12303AA6A00F5A0B6 /* ANSWebSocket.h */,
+				E84CE3BC2303AA6A00F5A0B6 /* ANSWebSocket.m */,
+			);
+			path = DesignerMessages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E8EAE6D722FA837F00C29545 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EAE79F22FA917900C29545 /* AnalysysAgentConfig.h in Headers */,
+				E8C67D5F23545A9900EC75B8 /* AnalysysLogger.h in Headers */,
+				E8EAE7B622FA917900C29545 /* AnalysysAgent.h in Headers */,
+				E8E396F824DBD9720019C4C7 /* ANSSecurityPolicy.h in Headers */,
+				E8DA6A802333663100B56AB0 /* ANSConst.h in Headers */,
+				E8EAE79222FA917900C29545 /* NSObject+ANSSwizzling.h in Headers */,
+				E8EAE78B22FA917900C29545 /* ANSHeatMapFunc.h in Headers */,
+				E8BE443B234085E400C3FE74 /* ANSAutoTrackProperty.h in Headers */,
+				E8EAE7D222FA917900C29545 /* ANSDefaultStrategy.h in Headers */,
+				4810D88C23502629004A60A5 /* ANSQueue.h in Headers */,
+				487C00CD238E1652000745A7 /* ANSProtocolSwizzler.h in Headers */,
+				487AAD35235DBCD500B444CC /* ANSUncaughtExceptionHandler.h in Headers */,
+				E8EAE7AE22FA917900C29545 /* ANSHeatMapAutoTrack.h in Headers */,
+				E8EAE78622FA917900C29545 /* ANSDataCheck.h in Headers */,
+				48F41AFC2372BCDA0069E96D /* ANSAllBuryPoint.h in Headers */,
+				E8EAE7D622FA917900C29545 /* ANSStrategyProtocol.h in Headers */,
+				38B80F9925C7F85800E18FD8 /* ANSWKScriptMessageHandler.h in Headers */,
+				E8EAE79122FA917900C29545 /* ANSDataCheckLog.h in Headers */,
+				E8EAE7CC22FA917900C29545 /* ANSTelephonyNetwork.h in Headers */,
+				E8DA6A7F2333663100B56AB0 /* ANSConst+private.h in Headers */,
+				E8EAE79B22FA917900C29545 /* NSThread+ANSHelper.h in Headers */,
+				E8EAE7B022FA917900C29545 /* ANSModuleProcessing.h in Headers */,
+				489AE16E23617B3400880546 /* ANSBaseModel.h in Headers */,
+				E8EAE78922FA917900C29545 /* ANSDataCheckRouter.h in Headers */,
+				4810D89E2350590E004A60A5 /* ANSLock.h in Headers */,
+				E8EAE7AA22FA917900C29545 /* ANSOpenURLAutoTrack.h in Headers */,
+				489AE17223617CA100880546 /* ANSLogParamsUtil.h in Headers */,
+				E85097C923682CE7003214A1 /* ANSDateUtil.h in Headers */,
+				E8EAE7D122FA917900C29545 /* ANSStrategyManager.h in Headers */,
+				E8EAE7D822FA917900C29545 /* ANSServerStrategy.h in Headers */,
+				489AE16B23617B3400880546 /* ANSKeyNameConst.h in Headers */,
+				482198FA2362CB1D00AA4380 /* ANSAutoTrackCellProperty.h in Headers */,
+				E8E396FD24DBF0B30019C4C7 /* ANSNetworking.h in Headers */,
+				E8EAE7DA22FA917900C29545 /* ANSDelayStrategy.h in Headers */,
+				E8BFFEFA2383BCEF00D3DE8B /* UIView+ANSPathUtils.h in Headers */,
+				E8EAE78422FA917900C29545 /* ANSDataConfig.h in Headers */,
+				E8A5013A236AB75C00D41876 /* ANSTimeCheckManager.h in Headers */,
+				E88B796D2362E76600F421BB /* ANSAppStartSource.h in Headers */,
+				48F41B022372BDE40069E96D /* ANSAllBuryIdentiferProtocol.h in Headers */,
+				E8EAE7CD22FA917900C29545 /* ANSDatabase.h in Headers */,
+				E8BE443C234085E400C3FE74 /* UIView+ANSAutoTrack.h in Headers */,
+				486DA100253E96F400390997 /* ANSSessionManager.h in Headers */,
+				E8EAE7B922FA917900C29545 /* ANSFileManager.h in Headers */,
+				E8EAE79822FA917900C29545 /* NSString+ANSMD5.h in Headers */,
+				E8EAE7AC22FA917900C29545 /* ANSHybrid.h in Headers */,
+				48A73D02234F183200938D96 /* ANSKeychainItemWrapper.h in Headers */,
+				E8EAE7BF22FA917900C29545 /* ANSJsonUtil.h in Headers */,
+				489AE16D23617B3400880546 /* ANSAllBuryPointModel.h in Headers */,
+				48F41AFF2372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.h in Headers */,
+				E8EAE78722FA917900C29545 /* ANSDataProcessing.h in Headers */,
+				E8EAE7BB22FA917900C29545 /* ANSUtil.h in Headers */,
+				E80D4A912356F898001E329F /* ANSControllerUtils.h in Headers */,
+				E88B79682361A94400F421BB /* NSString+ANSDBEncrypt.h in Headers */,
+				E8EAE79622FA917900C29545 /* UIView+ANSHelper.h in Headers */,
+				E80D4A952356F8DB001E329F /* ANSEncryptUtis.h in Headers */,
+				382E68FB25E4B192008D319D /* PageViewDuration.h in Headers */,
+				E8EAE79522FA917900C29545 /* NSInvocation+ANSHelper.h in Headers */,
+				E8EAE7D422FA917900C29545 /* ANSUserStrategy.h in Headers */,
+				E8EAE7CB22FA917900C29545 /* ANSReachability.h in Headers */,
+				E8EAE7B522FA917900C29545 /* AnalysysSDK.h in Headers */,
+				E8EAE7B822FA917900C29545 /* ANSSwizzler.h in Headers */,
+				E8EAE7C522FA917900C29545 /* ANSGzip.h in Headers */,
+				E8EAE7C722FA917900C29545 /* ANSBundleUtil.h in Headers */,
+				E8EAE7C122FA917900C29545 /* ANSMediator.h in Headers */,
+				E8EAE7A922FA917900C29545 /* ANSDeviceInfo.h in Headers */,
+				E8EAE7AB22FA917900C29545 /* ANSPageAutoTrack.h in Headers */,
+				E8EAE7B122FA917900C29545 /* ANSModuleConfig.h in Headers */,
+				E8EAE78A22FA917900C29545 /* ANSDataFunc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE6E722FA83A300C29545 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EAE7E022FA918A00C29545 /* ANSAESAlgorithm.h in Headers */,
+				E8EAE7E222FA918A00C29545 /* ANSDataEncrypt.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE6F422FA83BA00C29545 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84CE3CB2303AA6A00F5A0B6 /* ANSABTestDesignerConnection.h in Headers */,
+				E8EAE6FD22FA83BA00C29545 /* AnalysysVisual.h in Headers */,
+				E84CE3822303AA3800F5A0B6 /* ANSClassDescription.h in Headers */,
+				E84CE3D32303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.h in Headers */,
+				E84CE3B32303AA5C00F5A0B6 /* ANSUITableViewBinding.h in Headers */,
+				E84CE3B52303AA5C00F5A0B6 /* ANSDesignerEventBindingMessage.h in Headers */,
+				E8CD64C824D149F4002FAB55 /* UIView+ANSScreenDisplaying.h in Headers */,
+				E8EAE83522FA919A00C29545 /* ANSVisualSDK.h in Headers */,
+				482937BA246E4B4F005C948F /* UIView+ViewNode.h in Headers */,
+				E84CE3D02303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.h in Headers */,
+				485B0A112431CA9400E6427D /* ANSVisualRegular.h in Headers */,
+				4875727623E7F86F008F7910 /* UIView+ANSVisualIdentifer.h in Headers */,
+				E84CE3CF2303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.h in Headers */,
+				E84CE3972303AA4B00F5A0B6 /* ANSObjectIdentityProvider.h in Headers */,
+				E8EAE84A22FA919A00C29545 /* ANSValueTransformers.h in Headers */,
+				E84CE3862303AA3800F5A0B6 /* ANSPropertyDescription.h in Headers */,
+				E84CE3A02303AA4B00F5A0B6 /* ANSObjectSerializerContext.h in Headers */,
+				E84CE3C92303AA6A00F5A0B6 /* ANSDesignerSessionCollection.h in Headers */,
+				E84CE39F2303AA4B00F5A0B6 /* ANSSequenceGenerator.h in Headers */,
+				E84CE3872303AA3800F5A0B6 /* ANSTypeDescription.h in Headers */,
+				E84CE3D12303AA6A00F5A0B6 /* ANSWebSocket.h in Headers */,
+				E84CE3772303AA1A00F5A0B6 /* UIViewController+ANSSwizzling.h in Headers */,
+				E84CE3852303AA3800F5A0B6 /* ANSEnumDescription.h in Headers */,
+				E84CE3B82303AA5C00F5A0B6 /* ANSEventBinding.h in Headers */,
+				E84CE3A22303AA4B00F5A0B6 /* ANSApplicationStateSerializer.h in Headers */,
+				483AB6C923F4E8B100059D46 /* ANSVisualConst.h in Headers */,
+				4808C713246A93E7001E2B1C /* ANSVisualHybrid.h in Headers */,
+				E84CE3CD2303AA6A00F5A0B6 /* ANSAbstractABTestDesignerMessage.h in Headers */,
+				E84CE3992303AA4B00F5A0B6 /* ANSObjectSelector.h in Headers */,
+				E84CE39C2303AA4B00F5A0B6 /* ANSObjectSerializerConfig.h in Headers */,
+				E84CE3CE2303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.h in Headers */,
+				E84CE3D82303AA6A00F5A0B6 /* ANSABTestDesignerMessage.h in Headers */,
+				E84CE3A32303AA4B00F5A0B6 /* ANSObjectSerializer.h in Headers */,
+				4875727723E7F86F008F7910 /* ANSVisualIdentiferProtocol.h in Headers */,
+				E84CE3B12303AA5C00F5A0B6 /* ANSUIControlBinding.h in Headers */,
+				483AB6CD23F4F9AE00059D46 /* ANSVisualSwizzler.h in Headers */,
+				485082B023ED09D8000CE9E8 /* ANSVisualData.h in Headers */,
+				485082AB23ED082D000CE9E8 /* ANSVisualSearch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE70122FA83CC00C29545 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EAE70A22FA83CC00C29545 /* AnalysysPush.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E8EAE6DB22FA837F00C29545 /* AnalysysAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8EAE6E422FA837F00C29545 /* Build configuration list for PBXNativeTarget "AnalysysAgent" */;
+			buildPhases = (
+				E8EAE6D722FA837F00C29545 /* Headers */,
+				E8EAE6D822FA837F00C29545 /* Sources */,
+				E8EAE6D922FA837F00C29545 /* Frameworks */,
+				E8EAE6DA22FA837F00C29545 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnalysysAgent;
+			productName = AnalysysAgent;
+			productReference = E8EAE6DC22FA837F00C29545 /* AnalysysAgent.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8EAE6EB22FA83A300C29545 /* AnalysysEncrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8EAE6F122FA83A300C29545 /* Build configuration list for PBXNativeTarget "AnalysysEncrypt" */;
+			buildPhases = (
+				E8EAE6E722FA83A300C29545 /* Headers */,
+				E8EAE6E822FA83A300C29545 /* Sources */,
+				E8EAE6E922FA83A300C29545 /* Frameworks */,
+				E8EAE6EA22FA83A300C29545 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnalysysEncrypt;
+			productName = AnalysysEncrypt;
+			productReference = E8EAE6EC22FA83A300C29545 /* AnalysysEncrypt.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8EAE6F822FA83BA00C29545 /* AnalysysVisual */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8EAE6FE22FA83BA00C29545 /* Build configuration list for PBXNativeTarget "AnalysysVisual" */;
+			buildPhases = (
+				E8EAE6F422FA83BA00C29545 /* Headers */,
+				E8EAE6F522FA83BA00C29545 /* Sources */,
+				E8EAE6F622FA83BA00C29545 /* Frameworks */,
+				E8EAE6F722FA83BA00C29545 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnalysysVisual;
+			productName = AnalysysVisual;
+			productReference = E8EAE6F922FA83BA00C29545 /* AnalysysVisual.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8EAE70522FA83CC00C29545 /* AnalysysPush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8EAE70B22FA83CC00C29545 /* Build configuration list for PBXNativeTarget "AnalysysPush" */;
+			buildPhases = (
+				E8EAE70122FA83CC00C29545 /* Headers */,
+				E8EAE70222FA83CC00C29545 /* Sources */,
+				E8EAE70322FA83CC00C29545 /* Frameworks */,
+				E8EAE70422FA83CC00C29545 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnalysysPush;
+			productName = AnalysysPush;
+			productReference = E8EAE70622FA83CC00C29545 /* AnalysysPush.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8EAE6D322FA837F00C29545 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "shaochong du";
+				TargetAttributes = {
+					E8EAE6DB22FA837F00C29545 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E8EAE6EB22FA83A300C29545 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E8EAE6F822FA83BA00C29545 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E8EAE70522FA83CC00C29545 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E8EAE87D22FA91EE00C29545 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E8EAE88222FA920E00C29545 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E8EAE88722FA922800C29545 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E8EAE88C22FA924000C29545 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E8EAE6D622FA837F00C29545 /* Build configuration list for PBXProject "AnalysysSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8EAE6D222FA837F00C29545;
+			productRefGroup = E8EAE6DD22FA837F00C29545 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8EAE6DB22FA837F00C29545 /* AnalysysAgent */,
+				E8EAE6EB22FA83A300C29545 /* AnalysysEncrypt */,
+				E8EAE6F822FA83BA00C29545 /* AnalysysVisual */,
+				E8EAE70522FA83CC00C29545 /* AnalysysPush */,
+				E8EAE87D22FA91EE00C29545 /* PackageAgent */,
+				E8EAE88222FA920E00C29545 /* PackageVisual */,
+				E8EAE88722FA922800C29545 /* PackagePush */,
+				E8EAE88C22FA924000C29545 /* PackageEncrypt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8EAE6DA22FA837F00C29545 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE6EA22FA83A300C29545 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE6F722FA83BA00C29545 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE70422FA83CC00C29545 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E8EAE88122FA91F500C29545 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=\"AnalysysAgent\"\nINSTALL_DIR=${SRCROOT}/iOSAnalysySDK/${FMK_NAME}.framework\n\n# 清理原有库\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# 编译库framework\nxcodebuild clean\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator build\n\n# 适配xcode 12 模拟器与真机framework都包含arm64架构，导致编译失败\nlipo \"${SIMULATOR_DIR}/${FMK_NAME}\" -remove arm64 -output \"${SIMULATOR_DIR}/${FMK_NAME}\"\n\n## 合并framework\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\nopen \"${SRCROOT}/iOSAnalysySDK\"\n\n";
+		};
+		E8EAE88622FA921700C29545 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=\"AnalysysVisual\"\nINSTALL_DIR=${SRCROOT}/iOSAnalysySDK/${FMK_NAME}.framework\n\n# 清理原有库\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# 编译库framework\nxcodebuild clean\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator build\n\n# 适配xcode 12 模拟器与真机framework都包含arm64架构，导致编译失败\nlipo \"${SIMULATOR_DIR}/${FMK_NAME}\" -remove arm64 -output \"${SIMULATOR_DIR}/${FMK_NAME}\"\n\n## 合并framework\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\nopen \"${SRCROOT}/iOSAnalysySDK\"\n\n\n";
+		};
+		E8EAE88B22FA923000C29545 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=\"AnalysysPush\"\nINSTALL_DIR=${SRCROOT}/iOSAnalysySDK/${FMK_NAME}.framework\n\n# 清理原有库\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# 编译库framework\nxcodebuild clean\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator build\n\n# 适配xcode 12 模拟器与真机framework都包含arm64架构，导致编译失败\nlipo \"${SIMULATOR_DIR}/${FMK_NAME}\" -remove arm64 -output \"${SIMULATOR_DIR}/${FMK_NAME}\"\n\n## 合并framework\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\nopen \"${SRCROOT}/iOSAnalysySDK\"\n\n\n\n";
+		};
+		E8EAE89022FA924A00C29545 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=\"AnalysysEncrypt\"\nINSTALL_DIR=${SRCROOT}/iOSAnalysySDK/${FMK_NAME}.framework\n\n# 清理原有库\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# 编译库framework\nxcodebuild clean\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator build\n\n# 适配xcode 12 模拟器与真机framework都包含arm64架构，导致编译失败\nlipo \"${SIMULATOR_DIR}/${FMK_NAME}\" -remove arm64 -output \"${SIMULATOR_DIR}/${FMK_NAME}\"\n\n## 合并framework\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\nopen \"${SRCROOT}/iOSAnalysySDK\"\n\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8EAE6D822FA837F00C29545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EAE79722FA917900C29545 /* NSThread+ANSHelper.m in Sources */,
+				E8EAE78522FA917900C29545 /* ANSHeatMapFunc.m in Sources */,
+				4810D88D23502629004A60A5 /* ANSQueue.m in Sources */,
+				E8EAE7D522FA917900C29545 /* ANSServerStrategy.m in Sources */,
+				E8EAE7C822FA917900C29545 /* ANSJsonUtil.m in Sources */,
+				489AE16C23617B3400880546 /* ANSBaseModel.m in Sources */,
+				E8BFFEFB2383BCEF00D3DE8B /* UIView+ANSPathUtils.m in Sources */,
+				E8EAE7B222FA917900C29545 /* ANSModuleProcessing.m in Sources */,
+				E8EAE79E22FA917900C29545 /* AnalysysSDK.m in Sources */,
+				E8BE443D234085E400C3FE74 /* UIView+ANSAutoTrack.m in Sources */,
+				E8EAE7B722FA917900C29545 /* AnalysysAgentConfig.m in Sources */,
+				4810D89D2350590E004A60A5 /* ANSLock.m in Sources */,
+				48A73D03234F183200938D96 /* ANSKeychainItemWrapper.m in Sources */,
+				E8EAE78E22FA917900C29545 /* ANSDataProcessing.m in Sources */,
+				E8EAE79C22FA917900C29545 /* UIView+ANSHelper.m in Sources */,
+				E8EAE7C022FA917900C29545 /* ANSBundleUtil.m in Sources */,
+				E8EAE7C922FA917900C29545 /* ANSReachability.m in Sources */,
+				38B80F9825C7F85800E18FD8 /* ANSWKScriptMessageHandler.m in Sources */,
+				E8EAE7A222FA917900C29545 /* ANSOpenURLAutoTrack.m in Sources */,
+				E8EAE79D22FA917900C29545 /* NSInvocation+ANSHelper.m in Sources */,
+				E8EAE7CF22FA917900C29545 /* ANSDatabase.m in Sources */,
+				E8EAE79A22FA917900C29545 /* NSObject+ANSSwizzling.m in Sources */,
+				E8EAE7A122FA917900C29545 /* ANSPageAutoTrack.m in Sources */,
+				489AE16A23617B3400880546 /* ANSAllBuryPointModel.m in Sources */,
+				E8EAE7C422FA917900C29545 /* ANSFileManager.m in Sources */,
+				E8C67D6023545A9900EC75B8 /* AnalysysLogger.m in Sources */,
+				E8EAE7BE22FA917900C29545 /* ANSGzip.m in Sources */,
+				48F41B002372BDAA0069E96D /* UIView+ANSAllBuryIdentifer.m in Sources */,
+				E80D4A922356F898001E329F /* ANSControllerUtils.m in Sources */,
+				E8EAE7DB22FA917900C29545 /* ANSDefaultStrategy.m in Sources */,
+				E8EAE7A722FA917900C29545 /* ANSHeatMapAutoTrack.m in Sources */,
+				E8EAE79022FA917900C29545 /* ANSDataCheckRouter.m in Sources */,
+				E8E396F924DBD9720019C4C7 /* ANSSecurityPolicy.m in Sources */,
+				489AE17323617CA100880546 /* ANSLogParamsUtil.m in Sources */,
+				382E68FA25E4B192008D319D /* PageViewDuration.m in Sources */,
+				E8EAE78F22FA917900C29545 /* ANSDataFunc.m in Sources */,
+				E8EAE7D922FA917900C29545 /* ANSUserStrategy.m in Sources */,
+				E88B79692361A94400F421BB /* NSString+ANSDBEncrypt.m in Sources */,
+				E85097CA23682CE7003214A1 /* ANSDateUtil.m in Sources */,
+				E8EAE7A322FA917900C29545 /* ANSDeviceInfo.m in Sources */,
+				E88B796E2362E76600F421BB /* ANSAppStartSource.m in Sources */,
+				E8EAE7C322FA917900C29545 /* ANSSwizzler.m in Sources */,
+				E8EAE78C22FA917900C29545 /* ANSDataConfig.m in Sources */,
+				E8DA6A7E2333663100B56AB0 /* ANSConst.m in Sources */,
+				E8EAE7D322FA917900C29545 /* ANSDelayStrategy.m in Sources */,
+				E8EAE7B322FA917900C29545 /* ANSModuleConfig.m in Sources */,
+				E8EAE7D722FA917900C29545 /* ANSStrategyManager.m in Sources */,
+				E8EAE78822FA917900C29545 /* ANSDataCheckLog.m in Sources */,
+				E8EAE78D22FA917900C29545 /* ANSDataCheck.m in Sources */,
+				487C00CE238E1652000745A7 /* ANSProtocolSwizzler.m in Sources */,
+				E8EAE7CA22FA917900C29545 /* ANSTelephonyNetwork.m in Sources */,
+				489AE16F23617B3400880546 /* ANSKeyNameConst.m in Sources */,
+				48F41AFB2372BCDA0069E96D /* ANSAllBuryPoint.m in Sources */,
+				E8EAE7AF22FA917900C29545 /* ANSNetworking.m in Sources */,
+				E8EAE7A422FA917900C29545 /* ANSHybrid.m in Sources */,
+				E8EAE79422FA917900C29545 /* NSString+ANSMD5.m in Sources */,
+				E8EAE7B422FA917900C29545 /* AnalysysAgent.m in Sources */,
+				486DA101253E96F400390997 /* ANSSessionManager.m in Sources */,
+				88D5F08023029A1800F2C501 /* ANSSwizzlerNoConflict.m in Sources */,
+				E8EAE7BA22FA917900C29545 /* ANSMediator.m in Sources */,
+				487AAD36235DBCD500B444CC /* ANSUncaughtExceptionHandler.m in Sources */,
+				E8EAE7C222FA917900C29545 /* ANSUtil.m in Sources */,
+				E80D4A962356F8DB001E329F /* ANSEncryptUtis.m in Sources */,
+				E8A5013B236AB75C00D41876 /* ANSTimeCheckManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE6E822FA83A300C29545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EAE7E322FA918A00C29545 /* ANSDataEncrypt.m in Sources */,
+				E8EAE7E122FA918A00C29545 /* ANSAESAlgorithm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE6F522FA83BA00C29545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EAE84622FA919A00C29545 /* ANSNSNumberToCGFloatValueTransformer.m in Sources */,
+				E84CE3982303AA4B00F5A0B6 /* ANSApplicationStateSerializer.m in Sources */,
+				E8EAE84022FA919A00C29545 /* ANSCGRectToNSDictionaryValueTransformer.m in Sources */,
+				E8CD64C924D149F4002FAB55 /* UIView+ANSScreenDisplaying.m in Sources */,
+				E84CE39B2303AA4B00F5A0B6 /* ANSObjectSerializer.m in Sources */,
+				E84CE3782303AA1A00F5A0B6 /* UIViewController+ANSSwizzling.m in Sources */,
+				E8EAE84922FA919A00C29545 /* ANSBOOLToNSNumberValueTransformer.m in Sources */,
+				E84CE3D42303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoRequestMessage.m in Sources */,
+				482937BB246E4B4F005C948F /* UIView+ViewNode.m in Sources */,
+				E84CE39A2303AA4B00F5A0B6 /* ANSSequenceGenerator.m in Sources */,
+				E84CE39E2303AA4B00F5A0B6 /* ANSObjectSelector.m in Sources */,
+				E8EAE84522FA919A00C29545 /* ANSCGColorRefToNSStringValueTransformer.m in Sources */,
+				E84CE3D22303AA6A00F5A0B6 /* ANSABTestDesignerDeviceInfoResponseMessage.m in Sources */,
+				E84CE3CA2303AA6A00F5A0B6 /* ANSAbstractABTestDesignerMessage.m in Sources */,
+				E84CE3B42303AA5C00F5A0B6 /* ANSDesignerEventBindingResponseMesssage.m in Sources */,
+				485082AC23ED082D000CE9E8 /* ANSVisualSearch.m in Sources */,
+				483AB6CE23F4F9AE00059D46 /* ANSVisualSwizzler.m in Sources */,
+				E84CE3832303AA3800F5A0B6 /* ANSTypeDescription.m in Sources */,
+				E84CE39D2303AA4B00F5A0B6 /* ANSObjectIdentityProvider.m in Sources */,
+				E8EAE83C22FA919A00C29545 /* ANSNSAttributedStringToNSDictionaryValueTransformer.m in Sources */,
+				E8EAE83322FA919A00C29545 /* AnalysysVisual.m in Sources */,
+				E8EAE84722FA919A00C29545 /* ANSCGAffineTransformToNSDictionaryValueTransformer.m in Sources */,
+				485B0A122431CA9400E6427D /* ANSVisualRegular.m in Sources */,
+				E84CE3B22303AA5C00F5A0B6 /* ANSEventBinding.m in Sources */,
+				E8EAE84322FA919A00C29545 /* ANSUIFontToNSDictionaryValueTransformer.m in Sources */,
+				E84CE3CC2303AA6A00F5A0B6 /* ANSWebSocket.m in Sources */,
+				E84CE3B02303AA5C00F5A0B6 /* ANSUIControlBinding.m in Sources */,
+				E84CE3812303AA3800F5A0B6 /* ANSClassDescription.m in Sources */,
+				E84CE3A42303AA4B00F5A0B6 /* ANSObjectSerializerContext.m in Sources */,
+				E8EAE83F22FA919A00C29545 /* ANSPassThroughValueTransformer.m in Sources */,
+				E84CE3882303AA3800F5A0B6 /* ANSEnumDescription.m in Sources */,
+				4875727523E7F86F008F7910 /* UIView+ANSVisualIdentifer.m in Sources */,
+				E84CE3B62303AA5C00F5A0B6 /* ANSDesignerTrackMessage.m in Sources */,
+				E84CE3D72303AA6A00F5A0B6 /* ANSABTestDesignerConnection.m in Sources */,
+				E84CE3B72303AA5C00F5A0B6 /* ANSDesignerEventBindingRequestMessage.m in Sources */,
+				E8EAE83E22FA919A00C29545 /* ANSCGSizeToNSDictionaryValueTransformer.m in Sources */,
+				E84CE3A12303AA4B00F5A0B6 /* ANSObjectSerializerConfig.m in Sources */,
+				E8EAE84122FA919A00C29545 /* ANSCGPointToNSDictionaryValueTransformer.m in Sources */,
+				4808C714246A93E7001E2B1C /* ANSVisualHybrid.m in Sources */,
+				E84CE3842303AA3800F5A0B6 /* ANSPropertyDescription.m in Sources */,
+				E8EAE84422FA919A00C29545 /* ANSUIImageToNSDictionaryValueTransformer.m in Sources */,
+				E8EAE84822FA919A00C29545 /* ANSCATransform3DToNSDictionaryValueTransformer.m in Sources */,
+				483AB6CA23F4E8B100059D46 /* ANSVisualConst.m in Sources */,
+				E8EAE83422FA919A00C29545 /* ANSVisualSDK.m in Sources */,
+				485082AF23ED09D8000CE9E8 /* ANSVisualData.m in Sources */,
+				E84CE3AF2303AA5C00F5A0B6 /* ANSUITableViewBinding.m in Sources */,
+				E8EAE83D22FA919A00C29545 /* ANSUIColorToNSStringValueTransformer.m in Sources */,
+				E8EAE84222FA919A00C29545 /* ANSUIEdgeInsetsToNSDictionaryValueTransformer.m in Sources */,
+				E84CE3D52303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotRequestMessage.m in Sources */,
+				E84CE3D62303AA6A00F5A0B6 /* ANSABTestDesignerSnapshotResponseMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EAE70222FA83CC00C29545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EAE87C22FA91A500C29545 /* AnalysysPush.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E8EAE6E222FA837F00C29545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8EAE6E322FA837F00C29545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8EAE6E522FA837F00C29545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				INFOPLIST_FILE = AnalysysAgent/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.analysys.AnalysysAgent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8EAE6E622FA837F00C29545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				INFOPLIST_FILE = AnalysysAgent/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.analysys.AnalysysAgent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8EAE6F222FA83A300C29545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				INFOPLIST_FILE = AnalysysEncrypt/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.analysys.AnalysysEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8EAE6F322FA83A300C29545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				INFOPLIST_FILE = AnalysysEncrypt/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.analysys.AnalysysEncrypt;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8EAE6FF22FA83BA00C29545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				INFOPLIST_FILE = AnalysysVisual/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.analysys.AnalysysVisual;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8EAE70022FA83BA00C29545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				INFOPLIST_FILE = AnalysysVisual/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.analysys.AnalysysVisual;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8EAE70C22FA83CC00C29545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LJHDHDMM85;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				INFOPLIST_FILE = AnalysysPush/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.analysys.AnalysysPush;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8EAE70D22FA83CC00C29545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LJHDHDMM85;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				INFOPLIST_FILE = AnalysysPush/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.analysys.AnalysysPush;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8EAE87F22FA91EE00C29545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8EAE88022FA91EE00C29545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E8EAE88422FA920E00C29545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8EAE88522FA920E00C29545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E8EAE88922FA922800C29545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8EAE88A22FA922800C29545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E8EAE88E22FA924000C29545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8EAE88F22FA924000C29545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95YHL39M2F;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8EAE6D622FA837F00C29545 /* Build configuration list for PBXProject "AnalysysSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EAE6E222FA837F00C29545 /* Debug */,
+				E8EAE6E322FA837F00C29545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EAE6E422FA837F00C29545 /* Build configuration list for PBXNativeTarget "AnalysysAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EAE6E522FA837F00C29545 /* Debug */,
+				E8EAE6E622FA837F00C29545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EAE6F122FA83A300C29545 /* Build configuration list for PBXNativeTarget "AnalysysEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EAE6F222FA83A300C29545 /* Debug */,
+				E8EAE6F322FA83A300C29545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EAE6FE22FA83BA00C29545 /* Build configuration list for PBXNativeTarget "AnalysysVisual" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EAE6FF22FA83BA00C29545 /* Debug */,
+				E8EAE70022FA83BA00C29545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EAE70B22FA83CC00C29545 /* Build configuration list for PBXNativeTarget "AnalysysPush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EAE70C22FA83CC00C29545 /* Debug */,
+				E8EAE70D22FA83CC00C29545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EAE87E22FA91EE00C29545 /* Build configuration list for PBXAggregateTarget "PackageAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EAE87F22FA91EE00C29545 /* Debug */,
+				E8EAE88022FA91EE00C29545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EAE88322FA920E00C29545 /* Build configuration list for PBXAggregateTarget "PackageVisual" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EAE88422FA920E00C29545 /* Debug */,
+				E8EAE88522FA920E00C29545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EAE88822FA922800C29545 /* Build configuration list for PBXAggregateTarget "PackagePush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EAE88922FA922800C29545 /* Debug */,
+				E8EAE88A22FA922800C29545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EAE88D22FA924000C29545 /* Build configuration list for PBXAggregateTarget "PackageEncrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EAE88E22FA924000C29545 /* Debug */,
+				E8EAE88F22FA924000C29545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8EAE6D322FA837F00C29545 /* Project object */;
+}

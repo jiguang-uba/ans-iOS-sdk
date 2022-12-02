@@ -1,0 +1,46 @@
+PODS:
+  - AnalysysAgent (4.5.17):
+    - AnalysysAgent/Agent (= 4.5.17)
+    - AnalysysAgent/Encrypt (= 4.5.17)
+    - AnalysysAgent/Push (= 4.5.17)
+    - AnalysysAgent/Visual (= 4.5.17)
+  - AnalysysAgent/Agent (4.5.17)
+  - AnalysysAgent/Encrypt (4.5.17):
+    - AnalysysAgent/Agent
+  - AnalysysAgent/Push (4.5.17):
+    - AnalysysAgent/Agent
+  - AnalysysAgent/Visual (4.5.17):
+    - AnalysysAgent/Agent
+  - Bugly (2.5.91)
+  - IQKeyboardManager (6.5.9)
+  - MBProgressHUD (1.2.0)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+
+DEPENDENCIES:
+  - AnalysysAgent (from `../`)
+  - Bugly
+  - IQKeyboardManager
+  - MBProgressHUD
+  - UMengAnalytics-NO-IDFA (= 4.2.5)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Bugly
+    - IQKeyboardManager
+    - MBProgressHUD
+    - UMengAnalytics-NO-IDFA
+
+EXTERNAL SOURCES:
+  AnalysysAgent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AnalysysAgent: 26499b77d55f6140bacfad7f27350f0f5d66b2da
+  Bugly: afe841bba2ea6de6d432a3c125240a5e75949c55
+  IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+
+PODFILE CHECKSUM: e467336b26583b46a038d83da4eb9001aab4ba77
+
+COCOAPODS: 1.11.2

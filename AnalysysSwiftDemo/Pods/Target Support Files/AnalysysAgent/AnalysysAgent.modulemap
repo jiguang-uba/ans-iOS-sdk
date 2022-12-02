@@ -1,0 +1,6 @@
+framework module AnalysysAgent {
+  umbrella header "AnalysysAgent-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1 @@
+../../../../../AnalysysSDK_SourceCode/Classes/AnalysysVisual/DesignerSupport/Value Transformers/ANSValueTransformers.h
